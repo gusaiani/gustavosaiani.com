@@ -12,7 +12,6 @@ const images = {
       isAvailable: false,
       price: "Presente",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem9.jpg",
@@ -26,7 +25,6 @@ const images = {
       isAvailable: true,
       price: "8000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem37.jpg",
@@ -40,7 +38,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem12.jpg",
@@ -54,7 +51,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem13.jpg",
@@ -68,7 +64,6 @@ const images = {
       isAvailable: true,
       price: "3000<br>Com caixa de vidro.",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem14.jpg",
@@ -82,7 +77,6 @@ const images = {
       isAvailable: true,
       price: "5000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem15.jpg",
@@ -96,7 +90,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem16.jpg",
@@ -110,7 +103,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem17.jpg",
@@ -124,7 +116,6 @@ const images = {
       isAvailable: false,
       price: "Presente",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem18.jpg",
@@ -138,7 +129,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem20.jpg",
@@ -152,7 +142,6 @@ const images = {
       isAvailable: false,
       price: "600",
       wasSold: true,
-      saleDate:
     },
     {
       filename: "imagem21.jpg",
@@ -166,7 +155,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem22.jpg",
@@ -180,7 +168,6 @@ const images = {
       isAvailable: true,
       price: "2000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem23.jpg",
@@ -194,7 +181,6 @@ const images = {
       isAvailable: true,
       price: "3000<br>Com caixa de vidro.",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem24.jpg",
@@ -208,7 +194,6 @@ const images = {
       isAvailable: false,
       price: "4400",
       wasSold: true,
-      saleDate:
     },
     {
       filename: "imagem26.jpg",
@@ -222,7 +207,6 @@ const images = {
       isAvailable: false,
       price: "500",
       wasSold: true,
-      saleDate:
     },
     {
       filename: "imagem27.jpg",
@@ -236,7 +220,6 @@ const images = {
       isAvailable: false,
       price: "1200",
       wasSold: true,
-      saleDate:
     },
     {
       filename: "imagem28.jpg",
@@ -250,7 +233,6 @@ const images = {
       isAvailable: false,
       price: "Presente",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem31.jpg",
@@ -264,7 +246,6 @@ const images = {
       isAvailable: false,
       price: "Presente",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem32.jpg",
@@ -278,7 +259,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem35.jpg",
@@ -292,7 +272,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem38.jpg",
@@ -306,7 +285,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem39.jpg",
@@ -320,7 +298,6 @@ const images = {
       isAvailable: true,
       price: "3000",
       wasSold: true,
-      saleDate: 2/3/2017
     },
     {
       filename: "imagem40.jpg",
@@ -334,7 +311,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem41.jpg",
@@ -348,7 +324,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem42.jpg",
@@ -362,12 +337,11 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem44.png",
       name: "Paul McCartney cumprimentando Brian Wilson no camarim após a estréia de Smile",
-      date: Agosto 2010,
+      date: 2010,
       material: "acrílica sobre papel",
       width: 25,
       height: 25,
@@ -376,7 +350,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem45.png",
@@ -390,7 +363,6 @@ const images = {
       isAvailable: true,
       price: "12000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "gustavo-saiani-papa-n-trippy.jpg",
@@ -404,7 +376,6 @@ const images = {
       isAvailable: true,
       price: "6000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem47.jpg",
@@ -418,7 +389,6 @@ const images = {
       isAvailable: false,
       price: "Presente",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem48.jpg",
@@ -432,7 +402,6 @@ const images = {
       isAvailable: true,
       price: "4000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem49.png",
@@ -446,7 +415,6 @@ const images = {
       isAvailable: true,
       price: "10000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem50.jpg",
@@ -460,7 +428,6 @@ const images = {
       isAvailable: true,
       price: "3000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem51.png",
@@ -474,7 +441,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem52.jpg",
@@ -488,7 +454,6 @@ const images = {
       isAvailable: true,
       price: "8000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem53.png",
@@ -502,7 +467,6 @@ const images = {
       isAvailable: true,
       price: "7000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "imagem54.jpg",
@@ -516,7 +480,6 @@ const images = {
       isAvailable: true,
       price: "12000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "gustavo-saiani-flora-2014.jpg",
@@ -530,7 +493,6 @@ const images = {
       isAvailable: true,
       price: "15000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "gustavo-saiani-gondwana.jpg",
@@ -544,7 +506,6 @@ const images = {
       isAvailable: true,
       price: "3000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "gustavo-saiani-laniakea.jpg",
@@ -558,7 +519,6 @@ const images = {
       isAvailable: true,
       price: "3000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "gustavo-saiani-coracao.jpg",
@@ -572,7 +532,6 @@ const images = {
       isAvailable: true,
       price: "7000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "caca-e-coleta-gustavo-saiani.jpg",
@@ -586,7 +545,6 @@ const images = {
       isAvailable: true,
       price: "7000",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "gustavo-saiani-cassi.png",
@@ -600,7 +558,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "gustavo-saiani-bananalidade.png",
@@ -614,7 +571,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "gustavo-saiani-gut.jpg",
@@ -628,7 +584,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "gustavo-saiani-parlamento-islandes.jpg",
@@ -642,7 +597,6 @@ const images = {
       isAvailable: false,
       price: "",
       wasSold: false,
-      saleDate:
     },
     {
       filename: "gustavo-saiani-sao-miguel.jpg",
@@ -656,7 +610,6 @@ const images = {
       isAvailable: true,
       price: "40000",
       wasSold: false,
-      saleDate:
     }
   ]
 }
