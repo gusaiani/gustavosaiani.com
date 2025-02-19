@@ -11,7 +11,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "Presente",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem9.jpg",
@@ -24,7 +24,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "8000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem37.jpg",
@@ -37,7 +37,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem12.jpg",
@@ -50,7 +50,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem13.jpg",
@@ -63,7 +63,7 @@ const images = {
       visible: false,
       isAvailable: true,
       price: "3000<br>Com caixa de vidro.",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem14.jpg",
@@ -76,7 +76,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "5000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem15.jpg",
@@ -89,7 +89,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem16.jpg",
@@ -99,10 +99,10 @@ const images = {
       width: 142,
       height: 186,
       position: 11,
-      visible: true,
+      visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem17.jpg",
@@ -115,7 +115,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "Presente",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem18.jpg",
@@ -128,7 +128,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem20.jpg",
@@ -141,7 +141,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "600",
-      wasSold: true,
+      wasSold: true
     },
     {
       filename: "imagem21.jpg",
@@ -154,7 +154,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem22.jpg",
@@ -167,7 +167,7 @@ const images = {
       visible: false,
       isAvailable: true,
       price: "2000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem23.jpg",
@@ -180,7 +180,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "3000<br>Com caixa de vidro.",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem24.jpg",
@@ -193,7 +193,7 @@ const images = {
       visible: true,
       isAvailable: false,
       price: "4400",
-      wasSold: true,
+      wasSold: true
     },
     {
       filename: "imagem26.jpg",
@@ -206,7 +206,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "500",
-      wasSold: true,
+      wasSold: true
     },
     {
       filename: "imagem27.jpg",
@@ -219,7 +219,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "1200",
-      wasSold: true,
+      wasSold: true
     },
     {
       filename: "imagem28.jpg",
@@ -232,7 +232,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "Presente",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem31.jpg",
@@ -245,7 +245,7 @@ const images = {
       visible: true,
       isAvailable: false,
       price: "Presente",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem32.jpg",
@@ -258,7 +258,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem35.jpg",
@@ -271,7 +271,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem38.jpg",
@@ -284,7 +284,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem39.jpg",
@@ -297,7 +297,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "3000",
-      wasSold: true,
+      wasSold: true
     },
     {
       filename: "imagem40.jpg",
@@ -310,7 +310,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem41.jpg",
@@ -323,7 +323,7 @@ const images = {
       visible: true,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem42.jpg",
@@ -336,11 +336,12 @@ const images = {
       visible: true,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem44.png",
-      name: "Paul McCartney cumprimentando Brian Wilson no camarim após a estréia de Smile",
+      name:
+        "Paul McCartney cumprimentando Brian Wilson no camarim após a estréia de Smile",
       date: 2010,
       material: "acrílica sobre papel",
       width: 25,
@@ -349,7 +350,7 @@ const images = {
       visible: false,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem45.png",
@@ -362,7 +363,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "12000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "gustavo-saiani-papa-n-trippy.jpg",
@@ -375,7 +376,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "6000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem47.jpg",
@@ -388,7 +389,7 @@ const images = {
       visible: true,
       isAvailable: false,
       price: "Presente",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem48.jpg",
@@ -401,12 +402,12 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "4000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem49.png",
       name: "Vernáculo",
-      date: 2011-12,
+      date: 2011 - 12,
       material: "óleo sobre tela",
       width: 133,
       height: 133,
@@ -414,12 +415,12 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "10000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem50.jpg",
       name: "Doutrina",
-      date: 2011-12,
+      date: 2011 - 12,
       material: "óleo sobre tela",
       width: 51,
       height: 35,
@@ -427,12 +428,12 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "3000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem51.png",
       name: "Eugenia",
-      date: 2012-13,
+      date: 2012 - 13,
       material: "óleo sobre tela",
       width: 165,
       height: 124,
@@ -440,7 +441,7 @@ const images = {
       visible: true,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem52.jpg",
@@ -453,7 +454,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "8000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem53.png",
@@ -466,7 +467,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "7000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "imagem54.jpg",
@@ -479,7 +480,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "12000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "gustavo-saiani-flora-2014.jpg",
@@ -492,7 +493,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "15000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "gustavo-saiani-gondwana.jpg",
@@ -505,7 +506,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "3000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "gustavo-saiani-laniakea.jpg",
@@ -518,7 +519,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "3000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "gustavo-saiani-coracao.jpg",
@@ -531,7 +532,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "7000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "caca-e-coleta-gustavo-saiani.jpg",
@@ -544,7 +545,7 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "7000",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "gustavo-saiani-cassi.png",
@@ -557,7 +558,7 @@ const images = {
       visible: true,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "gustavo-saiani-bananalidade.png",
@@ -570,7 +571,7 @@ const images = {
       visible: true,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "gustavo-saiani-gut.jpg",
@@ -583,7 +584,7 @@ const images = {
       visible: true,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "gustavo-saiani-parlamento-islandes.jpg",
@@ -596,7 +597,7 @@ const images = {
       visible: true,
       isAvailable: false,
       price: "",
-      wasSold: false,
+      wasSold: false
     },
     {
       filename: "gustavo-saiani-sao-miguel.jpg",
@@ -609,9 +610,9 @@ const images = {
       visible: true,
       isAvailable: true,
       price: "40000",
-      wasSold: false,
+      wasSold: false
     }
   ]
-}
+};
 
-export default images
+export default images;
