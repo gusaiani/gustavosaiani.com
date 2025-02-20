@@ -1,30 +1,40 @@
-import React from 'react'
-import './App.css'
-import images from './data/images'
+import React from "react";
+import "./App.css";
+import images from "./data/images";
+
+console.log(images);
 
 function App() {
   return (
     <div className="App">
+      <h1>Gustavo Saiani</h1>
+      <a href="mailto:gustavo@poe.ma">gustavo@poe.ma</a>
       <header className="App-header">
         {images.data
-            .filter(image => image.visible)
-            .map(image => (
-              <div style={{marginBottom: '60px'}}>
-                <img
-                  alt={image.name}
-                  src={`https://s3-sa-east-1.amazonaws.com/gustavosaiani.com/large/${image.filename}`}
-                  style={{
-                    width: '800px',
-                  }}
+          .filter(image => image.visible)
+          .map((image, index) => (
+            <div style={{ marginBottom: "60px" }}>
+              <img
+                alt={image.name}
+                src={`https://s3-sa-east-1.amazonaws.com/gustavosaiani.com/large/${
+                  image.filename
+                }`}
+                loading={index > 1 ? "lazy" : ""}
               />
-                <div>{image.name}</div>
+              <div>
+                <p>
+                  <b>{image.name}</b>, {image.date}
+                </p>
+                <p>{image.material}</p>
+                <p>
+                  {image.height} × {image.width}cm
+                </p>
               </div>
-            )
-          )
-        }
+            </div>
+          ))}
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
