@@ -3,6 +3,7 @@ const images = {
     {
       filename: "imagem42.jpg",
       name: "Páscoa 2006",
+      slug: "pascoa-2006",
       date: 2010,
       material: "acrílica sobre madeira",
       width: 176,
@@ -16,6 +17,7 @@ const images = {
     {
       filename: "gustavo-saiani-gut.jpg",
       name: "Gut",
+      slug: "gut",
       date: 2015,
       material: "óleo sobre tela",
       width: 180,
@@ -29,6 +31,7 @@ const images = {
     {
       filename: "imagem54.jpg",
       name: "Felipe",
+      slug: "felipe",
       date: 2013,
       material: "óleo sobre tela",
       width: 76,
@@ -42,6 +45,7 @@ const images = {
     {
       filename: "gustavo-saiani-flora-2014.jpg",
       name: "Flora",
+      slug: "flora",
       date: 2014,
       material: "óleo sobre tela",
       width: 128,
@@ -55,6 +59,7 @@ const images = {
     {
       filename: "imagem24.jpg",
       name: "David Bowie",
+      slug: "david-bowie",
       date: 2007,
       material: "óleo sobre tela",
       width: 90,
@@ -68,6 +73,7 @@ const images = {
     {
       filename: "imagem14.jpg",
       name: "Vez",
+      slug: "vez",
       date: 2008,
       material: "óleo sobre tela",
       width: 94,
@@ -81,6 +87,7 @@ const images = {
     {
       filename: "imagem9.jpg",
       name: "Amea",
+      slug: "amea",
       date: 2009,
       material: "óleo sobre tela",
       width: 196,
@@ -94,6 +101,7 @@ const images = {
     {
       filename: "imagem49.png",
       name: "Vernáculo",
+      slug: "vernaculo",
       date: 2011 - 12,
       material: "óleo sobre tela",
       width: 133,
@@ -107,6 +115,7 @@ const images = {
     {
       filename: "gustavo-saiani-sao-miguel.jpg",
       name: "São Miguel dos Milagres",
+      slug: "sao-miguel-dos-milagres",
       date: 2017,
       material: "óleo sobre tela",
       width: 63,
@@ -120,6 +129,7 @@ const images = {
     {
       filename: "imagem45.png",
       name: "Isa",
+      slug: "isa",
       date: 2010,
       material: "óleo sobre tela",
       width: 142,
@@ -133,6 +143,7 @@ const images = {
     {
       filename: "gustavo-saiani-papa-n-trippy.jpg",
       name: "Papá Não-Trippy (e desenho de Julia Debasse)",
+      slug: "papa-nao-trippy",
       date: 2011,
       material: "óleo sobre tela",
       width: 80,
@@ -146,6 +157,7 @@ const images = {
     {
       filename: "imagem51.png",
       name: "Eugenia",
+      slug: "eugenia",
       date: 2012 - 13,
       material: "óleo sobre tela",
       width: 165,
@@ -159,6 +171,7 @@ const images = {
     {
       filename: "imagem47.jpg",
       name: "Mapa-Mundi",
+      slug: "mapa-mundi",
       date: 2010,
       material: "óleo sobre tela",
       width: 110,
@@ -172,6 +185,7 @@ const images = {
     {
       filename: "imagem48.jpg",
       name: "Milagre",
+      slug: "milagre",
       date: 2008,
       material: "acrílica sobre madeira",
       width: 140,
@@ -185,6 +199,7 @@ const images = {
     {
       filename: "imagem39.jpg",
       name: "Futuro",
+      slug: "futuro",
       date: 2006,
       material: "acrílica sobre madeira",
       width: 50,
@@ -198,6 +213,7 @@ const images = {
     {
       filename: "imagem41.jpg",
       name: "Ekkyklema",
+      slug: "ekkyklema",
       date: 2010,
       material: "acrílica sobre canvas",
       width: 236,
@@ -211,6 +227,7 @@ const images = {
     {
       filename: "imagem15.jpg",
       name: "Bocetas Ortogonais",
+      slug: "bocetas-ortogonais",
       date: 2008,
       material: "acrílica sobre canvas",
       width: 196,
@@ -224,6 +241,7 @@ const images = {
     {
       filename: "imagem16.jpg",
       name: "Os Antigos Acreditavam Que",
+      slug: "os-antigos-acreditavam-que",
       date: 2008,
       material: "óleo sobre tela",
       width: 142,
@@ -237,6 +255,7 @@ const images = {
     {
       filename: "imagem17.jpg",
       name: "Arqueo",
+      slug: "arqueo",
       date: 2008,
       material: "acrílica sobre madeira",
       width: 185,
@@ -250,6 +269,7 @@ const images = {
     {
       filename: "imagem18.jpg",
       name: "Merlin",
+      slug: "merlin",
       date: 2008,
       material: "acrílica sobre papel",
       width: 46,
@@ -263,6 +283,7 @@ const images = {
     {
       filename: "imagem20.jpg",
       name: "Polaróides",
+      slug: "polaroides",
       date: 2007,
       material: "sharpie e óleo sobre papel",
       width: 20,
@@ -276,6 +297,7 @@ const images = {
     {
       filename: "imagem21.jpg",
       name: "18 anos",
+      slug: "18-anos",
       date: 2008,
       material: "bastões de óleo sobre papel",
       width: 46,
@@ -289,6 +311,7 @@ const images = {
     {
       filename: "imagem22.jpg",
       name: "Niminiminimi",
+      slug: "niminiminimi",
       date: 2007,
       material: "lápis de cor sobre papel",
       width: 29,
@@ -302,6 +325,7 @@ const images = {
     {
       filename: "imagem23.jpg",
       name: "Convite para uma Festa",
+      slug: "convite-para-uma-festa",
       date: 2007,
       material: "acrílica sobre papel",
       width: 46,
@@ -315,6 +339,7 @@ const images = {
     {
       filename: "imagem26.jpg",
       name: "Urbanos",
+      slug: "urbanos",
       date: 2007,
       material: "acrílica sobre canvas",
       width: 276,
@@ -328,6 +353,7 @@ const images = {
     {
       filename: "imagem27.jpg",
       name: "Aqui Eu Vi uma Mulher Cantando",
+      slug: "aqui-eu-vi-uma-mulher-cantando",
       date: 2007,
       material: "óleo sobre tela",
       width: 100,
@@ -341,6 +367,7 @@ const images = {
     {
       filename: "imagem28.jpg",
       name: "Alívio/Guenza",
+      slug: "alivio-guenza",
       date: 2006,
       material: "acrílica sobre papel",
       width: 21,
@@ -354,6 +381,7 @@ const images = {
     {
       filename: "imagem31.jpg",
       name: "Com Rodrigo Eberienos",
+      slug: "com-rodrigo-eberienos",
       date: 2006,
       material: "acrílica sobre madeira",
       width: 40,
@@ -367,6 +395,7 @@ const images = {
     {
       filename: "imagem32.jpg",
       name: "Arquétipos: 1: Jesus",
+      slug: "arquetipos-1-jesus",
       date: 2007,
       material: "acrílica sobre canvas",
       width: 30,
@@ -380,6 +409,7 @@ const images = {
     {
       filename: "imagem35.jpg",
       name: "Mulher Morta",
+      slug: "mulher-morta",
       date: 2007,
       material: "acrílica sobre canvas",
       width: 18,
@@ -393,6 +423,7 @@ const images = {
     {
       filename: "imagem38.jpg",
       name: "Mike Tyson",
+      slug: "mike-tyson",
       date: 2006,
       material: "pastel sobre papel",
       width: 42,
@@ -407,6 +438,7 @@ const images = {
       filename: "imagem44.png",
       name:
         "Paul McCartney cumprimentando Brian Wilson no camarim após a estréia de Smile",
+      slug: "mccartney",
       date: 2010,
       material: "acrílica sobre papel",
       width: 25,
@@ -420,6 +452,7 @@ const images = {
     {
       filename: "gustavo-saiani-coracao.jpg",
       name: "Coração",
+      slug: "coracao",
       date: 2014,
       material: "óleo sobre tela",
       width: 60,
@@ -433,6 +466,7 @@ const images = {
     {
       filename: "caca-e-coleta-gustavo-saiani.jpg",
       name: "Caça e Coleta",
+      slug: "caca-e-coleta",
       date: 2014,
       material: "óleo sobre tela",
       width: 60,
@@ -446,6 +480,7 @@ const images = {
     {
       filename: "imagem52.jpg",
       name: "Egito",
+      slug: "egito",
       date: 2013,
       material: "óleo sobre tela",
       width: 164,
@@ -459,6 +494,7 @@ const images = {
     {
       filename: "gustavo-saiani-bananalidade.png",
       name: "Bananalidade",
+      slug: "bananalidade",
       date: 2016,
       material: "óleo sobre tela",
       width: 160,
@@ -472,6 +508,7 @@ const images = {
     {
       filename: "imagem50.jpg",
       name: "Doutrina",
+      slug: "doutrina",
       date: 2011 - 12,
       material: "óleo sobre tela",
       width: 51,
@@ -485,6 +522,7 @@ const images = {
     {
       filename: "imagem53.png",
       name: "Não",
+      slug: "nao",
       date: 2013,
       material: "óleo sobre tela",
       width: 66,
@@ -498,6 +536,7 @@ const images = {
     {
       filename: "gustavo-saiani-gondwana.jpg",
       name: "Gondwana",
+      slug: "gondwana",
       date: 2014,
       material: "óleo sobre tela",
       width: 30,
@@ -511,6 +550,7 @@ const images = {
     {
       filename: "gustavo-saiani-laniakea.jpg",
       name: "Laniakea",
+      slug: "laniakea",
       date: 2014,
       material: "óleo sobre tela",
       width: 30,
@@ -524,6 +564,7 @@ const images = {
     {
       filename: "gustavo-saiani-cassi.png",
       name: "Cassi",
+      slug: "cassi",
       date: 2016,
       material: "óleo sobre tela",
       width: 160,
@@ -537,6 +578,7 @@ const images = {
     {
       filename: "gustavo-saiani-parlamento-islandes.jpg",
       name: "Parlamento Islandês",
+      slug: "parlamento-islandes",
       date: 2015,
       material: "óleo sobre tela",
       width: 62,
@@ -550,6 +592,7 @@ const images = {
     {
       filename: "imagem37.jpg",
       name: "Menino Cego com Dois Sonhos",
+      slug: "menino-cego-com-dois-sonhos",
       date: 2007,
       material: "acrílica sobre canvas",
       width: 18,
@@ -563,6 +606,7 @@ const images = {
     {
       filename: "imagem12.jpg",
       name: "Valsa Binária",
+      slug: "valsa-binaria",
       date: 2009,
       material: "acrílica sobre madeira",
       width: 54,
@@ -576,6 +620,7 @@ const images = {
     {
       filename: "imagem13.jpg",
       name: "Convite para uma Festa #2",
+      slug: "convite-para-uma-festa-2",
       date: 2008,
       material: "acrílica sobre papel",
       width: 80,
@@ -589,6 +634,7 @@ const images = {
     {
       filename: "imagem8.jpg",
       name: ", creio,",
+      slug: "creio",
       date: 2006,
       material: "acrílica sobre canvas",
       width: 87,
@@ -602,6 +648,7 @@ const images = {
     {
       filename: "imagem40.jpg",
       name: "Quarto de TV do meu Pai",
+      slug: "quarto-de-tv-do-meu-pai",
       date: 2005,
       material: "caneta permanente sobre papel",
       width: 29,

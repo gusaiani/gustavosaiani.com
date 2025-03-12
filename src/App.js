@@ -16,6 +16,7 @@ function App() {
             <div style={{ marginBottom: "60px" }}>
               <img
                 alt={image.name}
+                id={image.slug}
                 src={`https://s3-sa-east-1.amazonaws.com/gustavosaiani.com/large/${
                   image.filename
                 }`}
