@@ -183,6 +183,20 @@ const images = {
       wasSold: false
     },
     {
+      filename: "gustavo-saiani-esta.jpg",
+      name: "Esta",
+      slug: "esta",
+      date: 2025,
+      material: "óleo sobre tela",
+      width: 100,
+      height: 140,
+      position: 40,
+      visible: true,
+      isAvailable: true,
+      price: "5000",
+      wasSold: false
+    },
+    {
       filename: "imagem48.jpg",
       name: "Milagre",
       slug: "milagre",
