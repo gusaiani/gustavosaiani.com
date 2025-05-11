@@ -183,6 +183,20 @@ const images = {
       wasSold: false
     },
     {
+      filename: "gustavo-saiani-sol-2025.jpg ",
+      name: "Sol 2025",
+      slug: "sol-2025",
+      date: 2025,
+      material: "acrílica sobre tela",
+      width: 40,
+      height: 60,
+      position: 2,
+      visible: true,
+      isAvailable: true,
+      price: "",
+      wasSold: false
+    },
+    {
       filename: "gustavo-saiani-esta.jpg",
       name: "Esta",
       slug: "esta",
