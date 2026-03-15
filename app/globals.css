@@ -135,10 +135,12 @@ img {
   animation: fadeUp 0.6s ease 0.15s forwards;
 }
 
-.otw-ring {
+.hero-photo-wrap {
   position: relative;
-  width: 160px;
-  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
 }
 
 .hero-photo {
@@ -147,16 +149,21 @@ img {
   border-radius: 50%;
   object-fit: cover;
   object-position: center 20%;
-  position: absolute;
-  top: 10px;
-  left: 10px;
 }
 
-.otw-circle {
+.otw-banner {
   position: absolute;
-  inset: 0;
-  width: 160px;
-  height: 160px;
+  bottom: 12px;
+  left: -40px;
+  right: -40px;
+  background: #5f8b3c;
+  color: #fff;
+  text-align: center;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 3px 0;
+  transform: rotate(-25deg);
 }
 
 .hero-label {
@@ -607,21 +614,10 @@ img {
     gap: 1.5rem;
   }
 
-  .otw-ring {
-    width: 120px;
-    height: 120px;
-  }
-
+  .hero-photo-wrap,
   .hero-photo {
-    width: 104px;
-    height: 104px;
-    top: 8px;
-    left: 8px;
-  }
-
-  .otw-circle {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
   }
 }
 
@@ -643,20 +639,9 @@ img {
     gap: 0.75rem;
   }
 
-  .otw-ring {
-    width: 100px;
-    height: 100px;
-  }
-
+  .hero-photo-wrap,
   .hero-photo {
-    width: 86px;
-    height: 86px;
-    top: 7px;
-    left: 7px;
-  }
-
-  .otw-circle {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 }
