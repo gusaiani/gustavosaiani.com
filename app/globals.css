@@ -144,37 +144,6 @@ img {
   border: 2px solid var(--border-hover);
 }
 
-.otw-ribbon {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 200;
-  overflow: hidden;
-  width: 150px;
-  height: 150px;
-  pointer-events: none;
-}
-
-.otw-ribbon::before {
-  content: "Open to work";
-  position: absolute;
-  display: block;
-  width: 220px;
-  padding: 6px 0;
-  background: #5f8b3c;
-  color: #fff;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-align: center;
-  text-decoration: none;
-  transform: rotate(45deg);
-  top: 32px;
-  right: -52px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  pointer-events: auto;
-  cursor: pointer;
-}
 
 .hero-label {
   font-size: 0.6875rem;

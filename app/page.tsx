@@ -110,9 +110,6 @@ function BrowserFrame({
 export default function Home() {
   return (
     <>
-      {/* Corner ribbon */}
-      <a href="mailto:gs@gustavosaiani.com" className="otw-ribbon">Open to work</a>
-
       {/* Nav */}
       <nav className="nav">
         <div className="nav-inner">
