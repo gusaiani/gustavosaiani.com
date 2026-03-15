@@ -135,13 +135,28 @@ img {
   animation: fadeUp 0.6s ease 0.15s forwards;
 }
 
+.otw-ring {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
 .hero-photo {
   width: 140px;
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 20%;
-  border: 2px solid var(--border-hover);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.otw-circle {
+  position: absolute;
+  inset: 0;
+  width: 160px;
+  height: 160px;
 }
 
 .hero-label {
@@ -592,9 +607,21 @@ img {
     gap: 1.5rem;
   }
 
+  .otw-ring {
+    width: 120px;
+    height: 120px;
+  }
+
   .hero-photo {
-    width: 100px;
-    height: 100px;
+    width: 104px;
+    height: 104px;
+    top: 8px;
+    left: 8px;
+  }
+
+  .otw-circle {
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -616,8 +643,20 @@ img {
     gap: 0.75rem;
   }
 
+  .otw-ring {
+    width: 100px;
+    height: 100px;
+  }
+
   .hero-photo {
-    width: 80px;
-    height: 80px;
+    width: 86px;
+    height: 86px;
+    top: 7px;
+    left: 7px;
+  }
+
+  .otw-circle {
+    width: 100px;
+    height: 100px;
   }
 }

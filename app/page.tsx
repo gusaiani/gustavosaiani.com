@@ -136,7 +136,18 @@ export default function Home() {
               </p>
             </div>
             <div className="hero-photo-wrap">
-              <img src="/images/gustavo.png" alt="Gustavo Saiani" className="hero-photo" />
+              <div className="otw-ring">
+                <img src="/images/gustavo.png" alt="Gustavo Saiani" className="hero-photo" />
+                <svg className="otw-circle" viewBox="0 0 160 160">
+                  <defs>
+                    <path id="otw-path" d="M 80,80 m -68,0 a 68,68 0 1,1 136,0 a 68,68 0 1,1 -136,0" />
+                  </defs>
+                  <circle cx="80" cy="80" r="76" fill="none" stroke="#0a66c2" strokeWidth="5" opacity="0.85" />
+                  <text fill="#fff" fontSize="11" fontWeight="700" letterSpacing="1.5">
+                    <textPath href="#otw-path" startOffset="62%">OPEN TO WORK</textPath>
+                  </text>
+                </svg>
+              </div>
             </div>
           </div>
           <div className="hero-meta">
