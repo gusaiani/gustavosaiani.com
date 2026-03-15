@@ -43,6 +43,14 @@ const experience = [
 
 const sideProjects = [
   {
+    name: "Poema Investimentos",
+    url: "https://poe.ma",
+    domain: "poe.ma",
+    description:
+      "Value investment partnership. 356% cumulative returns from Jan 2017 to Dec 2025, outperforming the Brazilian stock index by 2.1x.",
+    image: "/images/poema.png",
+  },
+  {
     name: "Doing It",
     url: "https://doingit.online",
     domain: "doingit.online",
@@ -63,14 +71,6 @@ const sideProjects = [
     domain: "gustavosaiani.art.br",
     description: "Paintings portfolio.",
     image: "/images/artbr.png",
-  },
-  {
-    name: "Poema Investimentos",
-    url: "https://poe.ma",
-    domain: "poe.ma",
-    description:
-      "Value investment partnership. 356% cumulative returns from Jan 2017 to Dec 2025, outperforming the Brazilian stock index by 2.1x.",
-    image: "/images/poema.png",
   },
 ];
 
