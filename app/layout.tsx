@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { FaviconSwitcher } from "./favicon-switcher";
 
 export const metadata: Metadata = {
   title: "Gustavo Saiani — Senior Software Engineer",
   description:
     "Senior Software Engineer with 16 years building high-scale software. Previously at Metabase, Spoke, Toptal, and EmCasa.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Gustavo Saiani — Senior Software Engineer",
     description:
@@ -21,7 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <FaviconSwitcher />
+        {children}
+      </body>
     </html>
   );
 }
