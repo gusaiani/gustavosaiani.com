@@ -110,6 +110,9 @@ function BrowserFrame({
 export default function Home() {
   return (
     <>
+      {/* Corner ribbon */}
+      <a href="mailto:gs@gustavosaiani.com" className="otw-ribbon">Open to work</a>
+
       {/* Nav */}
       <nav className="nav">
         <div className="nav-inner">
@@ -137,9 +140,6 @@ export default function Home() {
             </div>
             <div className="hero-photo-wrap">
               <img src="/images/gustavo.png" alt="Gustavo Saiani" className="hero-photo" />
-              <div className="otw-banner">
-                <span>Open to work</span>
-              </div>
             </div>
           </div>
           <div className="hero-meta">
