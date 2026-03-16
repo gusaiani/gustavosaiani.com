@@ -137,7 +137,7 @@ export default function Home() {
           <div className="hero-top">
             <div className="hero-text">
               <p className="hero-label">Senior Software Engineer</p>
-              <h1 className="hero-name">Gustavo Saiani</h1>
+              <h1 id="gustavo-saiani" className="hero-name">Gustavo Saiani</h1>
               <p className="hero-title">
                 16 years building high-scale software at companies like Metabase, Toptal, and Spoke.
                 From greenfield MVPs to platforms serving millions. Led engineering teams and managed orgs along the way.
@@ -178,14 +178,14 @@ export default function Home() {
         <div className="section-inner">
           <div className="section-header">
             <p className="section-label">Experience</p>
-            <h2 className="section-title">Where I&apos;ve worked</h2>
+            <h2 id="where-ive-worked" className="section-title">Where I&apos;ve worked</h2>
           </div>
           <div className="experience-list">
             {experience.map((exp) => (
               <div key={exp.company} className="exp-card">
                 <div className="exp-info">
                   <span className="exp-period">{exp.period}</span>
-                  <h3 className="exp-company">
+                  <h3 id={exp.company.toLowerCase().replace(/\s+/g, "-")} className="exp-company">
                     <a href={exp.url} target="_blank" rel="noopener noreferrer">
                       {exp.company}
                     </a>
@@ -211,7 +211,7 @@ export default function Home() {
         <div className="section-inner">
           <div className="section-header">
             <p className="section-label">Side Projects</p>
-            <h2 className="section-title">Things I&apos;m building</h2>
+            <h2 id="things-im-building" className="section-title">Things I&apos;m building</h2>
           </div>
           <div className="projects-grid">
             {sideProjects.map((proj) => (
@@ -226,7 +226,7 @@ export default function Home() {
                   <img src={proj.image} alt={`${proj.name} screenshot`} loading="lazy" />
                 </div>
                 <div className="project-body">
-                  <h3 className="project-name">{proj.name}</h3>
+                  <h3 id={proj.name.toLowerCase().replace(/\s+/g, "-")} className="project-name">{proj.name}</h3>
                   <p className="project-url">{proj.domain}</p>
                   <p className="project-description">{proj.description}</p>
                 </div>
@@ -242,12 +242,12 @@ export default function Home() {
         <div className="section-inner">
           <div className="section-header">
             <p className="section-label">Skills</p>
-            <h2 className="section-title">Technical toolkit</h2>
+            <h2 id="technical-toolkit" className="section-title">Technical toolkit</h2>
           </div>
           <div className="skills-section">
             {Object.entries(skills).map(([group, items]) => (
               <div key={group}>
-                <h3 className="skill-group-title">{group}</h3>
+                <h3 id={group.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")} className="skill-group-title">{group}</h3>
                 <div className="skill-list">
                   {items.map((skill) => (
                     <span key={skill} className="skill-tag">{skill}</span>
@@ -263,7 +263,7 @@ export default function Home() {
       <footer id="contact" className="footer">
         <div className="footer-inner">
           <div className="footer-contact">
-            <h2>Let&apos;s work together</h2>
+            <h2 id="lets-work-together">Let&apos;s work together</h2>
             <div className="footer-links">
               <a href="mailto:gs@gustavosaiani.com" className="footer-link">gs@gustavosaiani.com</a>
               <a href="https://github.com/gusaiani" target="_blank" rel="noopener noreferrer" className="footer-link">GitHub</a>
