@@ -43,6 +43,14 @@ const experience = [
 
 const sideProjects = [
   {
+    name: "Swankdown",
+    url: "https://swankdown.gustavosaiani.com",
+    domain: "swankdown.gustavosaiani.com",
+    description:
+      "Transforms Markdown into beautifully typeset reading pages with refined typography.",
+    image: "/images/swankdown.png",
+  },
+  {
     name: "Poema Investimentos",
     url: "https://poe.ma",
     domain: "poe.ma",
