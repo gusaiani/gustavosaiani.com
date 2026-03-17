@@ -83,9 +83,10 @@ const sideProjects = [
 ];
 
 const skills = {
-  Languages: ["JavaScript", "TypeScript", "Node.js", "HTML5", "CSS3", "Elixir", "Ruby"],
-  Libraries: ["React 18", "Redux", "Styled Components", "Jest", "Cypress", "Webpack", "Storybook"],
-  "Tools & Infra": ["Claude Code", "Gemini", "AWS", "Docker", "GraphQL", "GitHub"],
+  Languages: ["JavaScript", "TypeScript", "Node.js", "HTML5", "CSS3", "Python", "Elixir", "Ruby"],
+  Libraries: ["React 19", "Next.js", "TanStack (Router, Query)", "Redux", "Tailwind CSS", "Styled Components", "Vite", "Webpack", "Storybook"],
+  Testing: ["Playwright", "Jest", "Vitest", "Cypress"],
+  "Tools & Infra": ["Claude Code", "Gemini", "AWS", "Docker", "Django", "PostgreSQL", "GraphQL", "ESLint", "Prettier", "GitHub"],
 };
 
 function BrowserFrame({
