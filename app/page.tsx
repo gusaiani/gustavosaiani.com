@@ -47,7 +47,7 @@ const sideProjects = [
     url: "https://poe.ma",
     domain: "poe.ma",
     description:
-      "Value investment partnership. 356% cumulative returns from Jan 2017 to Dec 2025, outperforming the Brazilian stock index by 2.1x.",
+      "Value investment partnership. 395% cumulative returns from Jan 2017 to Mar 2026, outperforming the Brazilian stock index by 1.9x.",
     image: "/images/poema.png",
   },
   {
