@@ -80,6 +80,14 @@ const sideProjects = [
     description: "Paintings portfolio.",
     image: "/images/artbr.png",
   },
+  {
+    name: "AI Engineering",
+    url: "https://github.com/gusaiani/ai-engineering",
+    domain: "github.com/gusaiani/ai-engineering",
+    description:
+      "Project-based AI engineering curriculum. 13 modules from LLM API basics to multi-agent systems, built for portfolio over credentials.",
+    image: "/images/ai-engineering.png",
+  },
 ];
 
 const skills = {
