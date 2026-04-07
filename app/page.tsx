@@ -133,12 +133,16 @@ const projects = [
   },
 ];
 
-const skills = {
-  Languages: ["JavaScript", "TypeScript", "Node.js", "HTML5", "CSS3", "Python", "Elixir", "Ruby"],
-  Libraries: ["React 19", "Next.js", "TanStack (Router, Query)", "Redux", "Tailwind CSS", "Styled Components", "Vite", "Webpack", "Storybook"],
-  Testing: ["Playwright", "Jest", "Vitest", "Cypress"],
-  "Tools & Infra": ["Claude Code", "Gemini", "AWS", "Docker", "Django", "PostgreSQL", "GraphQL", "ESLint", "Prettier", "GitHub"],
-};
+const skills: [string, string[]][] = [
+  ["Languages", ["JavaScript", "TypeScript", "Node.js", "HTML5", "CSS3", "Python", "Elixir", "Ruby", "Clojure", "SQL", "Shell"]],
+  ["AI", ["Claude Code", "Codex", "Anthropic SDK", "OpenAI SDK", "Prompt Engineering", "RAG", "Embeddings", "Semantic Search", "AI Agents", "Tool Use", "Multi-agent Systems", "LangChain", "LangGraph", "Evals", "Observability", "LLMOps", "Streaming", "Fine-tuning", "Multimodal", "pgvector"]],
+  ["Libraries", ["React 19", "Next.js", "TanStack (Router, Query)", "Redux", "Apollo", "GraphQL", "Tailwind CSS", "Styled Components", "Mantine", "Recharts", "PostCSS", "Vite", "Rspack", "Babel", "Bun", "Webpack", "Storybook", "Pydantic", "Resend"]],
+  ["Backend", ["Django", "Django REST Framework", "FastAPI", "Ruby on Rails", "ActiveRecord", "Gunicorn", "Uvicorn", "Elasticsearch", "Redis", "Shadow-cljs"]],
+  ["Databases", ["PostgreSQL", "pgvector", "Redis"]],
+  ["Testing", ["Playwright", "Jest", "Vitest", "Cypress", "pytest", "Factory Boy", "Testing Library", "Codecov"]],
+  ["DevOps & Infra", ["Docker", "Docker Compose", "Nginx", "GitHub", "GitHub Actions", "AWS", "DigitalOcean", "Fly.io", "systemd", "SSH", "Let's Encrypt", "Google Cloud Functions", "Husky"]],
+  ["Tools", ["ESLint", "Prettier", "Stylelint", "EditorConfig", "Makefile", "npm", "uv", "PostHog", "Google Analytics", "Google OAuth", "Stripe", "JWT", "Bcrypt", "BRAPI", "Financial Modeling Prep"]],
+];
 
 
 export default function Home() {
@@ -274,14 +278,10 @@ export default function Home() {
             <h2 id="technical-toolkit" className="section-title">Technical toolkit</h2>
           </div>
           <div className="skills-section">
-            {Object.entries(skills).map(([group, items]) => (
+            {skills.map(([group, items]) => (
               <div key={group}>
                 <h3 id={group.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")} className="skill-group-title">{group}</h3>
-                <div className="skill-list">
-                  {items.map((skill) => (
-                    <span key={skill} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
+                <ExpandableTech tech={items} limit={10} listClassName="skill-list" tagClassName="skill-tag" />
               </div>
             ))}
           </div>
