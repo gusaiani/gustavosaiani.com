@@ -360,6 +360,24 @@ img {
   border-radius: 4px;
 }
 
+.tech-more {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.625rem;
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.tech-more:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
 
 /* ── SKILLS ── */
 
