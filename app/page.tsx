@@ -36,7 +36,13 @@ const experience = [
     period: "Jul 2018 — Mar 2020",
     description:
       "Helped drive over $200M in annual revenue building a Freelancer Profile app serving 7,000+ freelancers across 140+ countries. Built public-facing pages with SSR, achieving $4 per-visit revenues. Implemented A/B testing and personalization during 20% YoY company growth.",
-    tech: ["React", "Apollo", "GraphQL", "Cypress", "PostgreSQL"],
+    tech: [
+      "React", "Apollo", "GraphQL", "Next.js", "SSR", "Styled Components",
+      "Ruby on Rails", "ActiveRecord", "Elasticsearch",
+      "PostgreSQL",
+      "Cypress", "Jest", "Storybook",
+      "Docker", "GitHub",
+    ],
     image: "/images/toptal.png",
   },
   {
