@@ -8,7 +8,15 @@ const experience = [
     period: "May 2021 — Feb 2026",
     description:
       "Delivered core features of the open-source BI platform used by 90,000+ organizations including enterprise and government clients. Improved application performance as the company grew revenues ten-fold. Revitalized public-facing projects through SEO and LLM optimization, contributing to growth from 30k to 90k customers.",
-    tech: ["React 18", "TypeScript", "Redux", "Mantine", "Cypress", "Storybook"],
+    tech: [
+      "React 18", "TypeScript", "Redux", "Mantine", "Storybook",
+      "Clojure", "Shadow-cljs",
+      "Rspack", "Babel", "PostCSS", "Bun",
+      "Jest", "Cypress", "Codecov",
+      "ESLint", "Prettier", "Stylelint",
+      "REST API", "Embedding SDK",
+      "GitHub", "Husky", "EditorConfig",
+    ],
     image: "/images/metabase.png",
   },
   {
