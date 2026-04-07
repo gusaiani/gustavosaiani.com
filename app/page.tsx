@@ -10,11 +10,11 @@ const experience = [
       "Delivered core features of the open-source BI platform used by 90,000+ organizations including enterprise and government clients. Improved application performance as the company grew revenues ten-fold. Revitalized public-facing projects through SEO and LLM optimization, contributing to growth from 30k to 90k customers.",
     tech: [
       "React 18", "TypeScript", "Redux", "Mantine", "Storybook",
-      "Clojure", "Shadow-cljs",
-      "Rspack", "Babel", "PostCSS", "Bun",
-      "Jest", "Cypress", "Codecov",
-      "ESLint", "Prettier", "Stylelint",
       "REST API", "Embedding SDK",
+      "Clojure", "Shadow-cljs",
+      "Jest", "Cypress", "Codecov",
+      "Rspack", "Babel", "PostCSS", "Bun",
+      "ESLint", "Prettier", "Stylelint",
       "GitHub", "Husky", "EditorConfig",
     ],
     image: "/images/metabase.png",
@@ -26,7 +26,7 @@ const experience = [
     period: "Mar 2020 — Apr 2021",
     description:
       "Led development of a greenfield React application enabling real-time package tracking, now supporting over 1 billion parcel deliveries annually. Elevated code coverage from 0% to 70%, reducing bugs by 70%. Assembled and managed a team of React developers.",
-    tech: ["React", "Node.js", "Cypress", "Jest", "Google Cloud Functions"],
+    tech: ["React", "Node.js", "Jest", "Cypress", "Google Cloud Functions"],
     image: "/images/spoke.png",
   },
   {
@@ -37,10 +37,9 @@ const experience = [
     description:
       "Helped drive over $200M in annual revenue building a Freelancer Profile app serving 7,000+ freelancers across 140+ countries. Built public-facing pages with SSR, achieving $4 per-visit revenues. Implemented A/B testing and personalization during 20% YoY company growth.",
     tech: [
-      "React", "Apollo", "GraphQL", "Next.js", "SSR", "Styled Components",
-      "Ruby on Rails", "ActiveRecord", "Elasticsearch",
-      "PostgreSQL",
-      "Cypress", "Jest", "Storybook",
+      "React", "Next.js", "Apollo", "GraphQL", "SSR", "Styled Components", "Storybook",
+      "Ruby on Rails", "ActiveRecord", "PostgreSQL", "Elasticsearch",
+      "Cypress", "Jest",
       "Docker", "GitHub",
     ],
     image: "/images/toptal.png",
@@ -80,8 +79,8 @@ const projects = [
     description: "Minimalist task and time tracker. Type a task name and start the clock.",
     image: "/images/doingit.png",
     tech: [
-      "Python", "FastAPI", "Uvicorn", "Pydantic",
       "JavaScript", "HTML", "CSS",
+      "Python", "FastAPI", "Uvicorn", "Pydantic",
       "PostgreSQL", "psycopg2",
       "Stripe", "Resend", "Google OAuth", "JWT", "Bcrypt",
       "pytest", "Playwright",
@@ -230,7 +229,7 @@ export default function Home() {
                       <h3 id={exp.company.toLowerCase().replace(/\s+/g, "-")} className="card-name">{exp.company}</h3>
                       <span className="exp-role">{exp.role}</span>
                       <p className="card-description">{exp.description}</p>
-                      <ExpandableTech tech={exp.tech} />
+                      <ExpandableTech tech={exp.tech} limit={10} />
                     </div>
                   </a>
                 ))}
@@ -259,7 +258,7 @@ export default function Home() {
                       <h3 id={proj.name.toLowerCase().replace(/\s+/g, "-")} className="card-name">{proj.name}</h3>
                       <p className="card-url">{proj.domain}</p>
                       <p className="card-description">{proj.description}</p>
-                      <ExpandableTech tech={proj.tech} />
+                      <ExpandableTech tech={proj.tech} limit={10} />
                     </div>
                   </a>
                 ))}
