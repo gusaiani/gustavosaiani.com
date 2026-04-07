@@ -41,7 +41,7 @@ const experience = [
   },
 ];
 
-const sideProjects = [
+const projects = [
   {
     name: "Poema Investimentos",
     url: "https://poe.ma",
@@ -49,6 +49,7 @@ const sideProjects = [
     description:
       "Value investment partnership. 395% cumulative returns from Jan 2017 to Mar 2026, outperforming the Brazilian stock index by 1.9x.",
     image: "/images/poema.png",
+    tech: ["HTML", "CSS", "JavaScript", "Python"],
   },
   {
     name: "Doing It",
@@ -56,6 +57,7 @@ const sideProjects = [
     domain: "doingit.online",
     description: "Minimalist task and time tracker. Type a task name and start the clock.",
     image: "/images/doingit.png",
+    tech: ["Python", "FastAPI", "PostgreSQL", "Playwright", "Stripe", "Docker"],
   },
   {
     name: "Sponda",
@@ -64,6 +66,7 @@ const sideProjects = [
     description:
       "Financial indicators for Brazilian public companies, built for value investors.",
     image: "/images/sponda.png",
+    tech: ["Next.js", "React", "TypeScript", "Django", "PostgreSQL", "Tailwind CSS", "Docker"],
   },
   {
     name: "Swankdown",
@@ -72,6 +75,7 @@ const sideProjects = [
     description:
       "Transforms Markdown into beautifully typeset reading pages with refined typography.",
     image: "/images/swankdown.png",
+    tech: ["Node.js", "JavaScript"],
   },
   {
     name: "Art Portfolio",
@@ -79,6 +83,7 @@ const sideProjects = [
     domain: "gustavosaiani.art.br",
     description: "Paintings portfolio.",
     image: "/images/artbr.png",
+    tech: ["React", "React Router"],
   },
   {
     name: "AI Engineering",
@@ -87,6 +92,7 @@ const sideProjects = [
     description:
       "Project-based AI engineering curriculum. 13 modules from LLM API basics to multi-agent systems, built for portfolio over credentials.",
     image: "/images/ai-engineering.png",
+    tech: ["Python", "Anthropic SDK", "OpenAI SDK"],
   },
 ];
 
@@ -97,32 +103,6 @@ const skills = {
   "Tools & Infra": ["Claude Code", "Gemini", "AWS", "Docker", "Django", "PostgreSQL", "GraphQL", "ESLint", "Prettier", "GitHub"],
 };
 
-function BrowserFrame({
-  url,
-  image,
-  alt,
-}: {
-  url: string;
-  image: string;
-  alt: string;
-}) {
-  const displayUrl = url.replace("https://", "");
-  return (
-    <a href={url} target="_blank" rel="noopener noreferrer" className="browser-frame">
-      <div className="browser-chrome">
-        <div className="browser-dots">
-          <span className="browser-dot" />
-          <span className="browser-dot" />
-          <span className="browser-dot" />
-        </div>
-        <span className="browser-url">{displayUrl}</span>
-      </div>
-      <div className="browser-viewport">
-        <img src={image} alt={alt} loading="lazy" />
-      </div>
-    </a>
-  );
-}
 
 export default function Home() {
   return (
@@ -181,66 +161,77 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Experience */}
+      {/* Experience & Projects */}
       <hr className="section-divider" />
       <section id="experience" className="section">
         <div className="section-inner">
-          <div className="section-header">
-            <p className="section-label">Experience</p>
-            <h2 id="where-ive-worked" className="section-title">Where I&apos;ve worked</h2>
-          </div>
-          <div className="experience-list">
-            {experience.map((exp) => (
-              <div key={exp.company} className="exp-card">
-                <div className="exp-info">
-                  <span className="exp-period">{exp.period}</span>
-                  <h3 id={exp.company.toLowerCase().replace(/\s+/g, "-")} className="exp-company">
-                    <a href={exp.url} target="_blank" rel="noopener noreferrer">
-                      {exp.company}
-                    </a>
-                  </h3>
-                  <span className="exp-role">{exp.role}</span>
-                  <p className="exp-desc">{exp.description}</p>
-                  <div className="exp-tech">
-                    {exp.tech.map((t) => (
-                      <span key={t}>{t}</span>
-                    ))}
-                  </div>
-                </div>
-                <BrowserFrame url={exp.url} image={exp.image} alt={`${exp.company} screenshot`} />
+          <div className="two-col-layout">
+            {/* Left column: Where I worked */}
+            <div className="col">
+              <div className="section-header">
+                <p className="section-label">Experience</p>
+                <h2 id="where-ive-worked" className="section-title">Where I worked</h2>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+              <div className="card-list">
+                {experience.map((exp) => (
+                  <a
+                    key={exp.company}
+                    href={exp.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card"
+                  >
+                    <div className="card-thumb">
+                      <img src={exp.image} alt={`${exp.company} screenshot`} loading="lazy" />
+                    </div>
+                    <div className="card-body">
+                      <span className="exp-period">{exp.period}</span>
+                      <h3 id={exp.company.toLowerCase().replace(/\s+/g, "-")} className="card-name">{exp.company}</h3>
+                      <span className="exp-role">{exp.role}</span>
+                      <p className="card-description">{exp.description}</p>
+                      <div className="card-tech">
+                        {exp.tech.map((t) => (
+                          <span key={t}>{t}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
 
-      {/* Side Projects */}
-      <hr className="section-divider" />
-      <section id="projects" className="section">
-        <div className="section-inner">
-          <div className="section-header">
-            <p className="section-label">Side Projects</p>
-            <h2 id="things-im-building" className="section-title">Things I&apos;m building</h2>
-          </div>
-          <div className="projects-grid">
-            {sideProjects.map((proj) => (
-              <a
-                key={proj.name}
-                href={proj.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-card"
-              >
-                <div className="project-thumb">
-                  <img src={proj.image} alt={`${proj.name} screenshot`} loading="lazy" />
-                </div>
-                <div className="project-body">
-                  <h3 id={proj.name.toLowerCase().replace(/\s+/g, "-")} className="project-name">{proj.name}</h3>
-                  <p className="project-url">{proj.domain}</p>
-                  <p className="project-description">{proj.description}</p>
-                </div>
-              </a>
-            ))}
+            {/* Right column: Projects */}
+            <div className="col" id="projects">
+              <div className="section-header">
+                <p className="section-label">Projects</p>
+                <h2 id="things-im-building" className="section-title">Things I&apos;m building</h2>
+              </div>
+              <div className="card-list">
+                {projects.map((proj) => (
+                  <a
+                    key={proj.name}
+                    href={proj.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card"
+                  >
+                    <div className="card-thumb">
+                      <img src={proj.image} alt={`${proj.name} screenshot`} loading="lazy" />
+                    </div>
+                    <div className="card-body">
+                      <h3 id={proj.name.toLowerCase().replace(/\s+/g, "-")} className="card-name">{proj.name}</h3>
+                      <p className="card-url">{proj.domain}</p>
+                      <p className="card-description">{proj.description}</p>
+                      <div className="card-tech">
+                        {proj.tech.map((t) => (
+                          <span key={t}>{t}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
