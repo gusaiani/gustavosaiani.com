@@ -1,3 +1,5 @@
+import ExpandableTech from "./expandable-tech";
+
 const experience = [
   {
     company: "Metabase",
@@ -43,13 +45,19 @@ const experience = [
 
 const projects = [
   {
-    name: "Poema Investimentos",
-    url: "https://poe.ma",
-    domain: "poe.ma",
+    name: "Sponda",
+    url: "https://sponda.capital",
+    domain: "sponda.capital",
     description:
-      "Value investment partnership. 395% cumulative returns from Jan 2017 to Mar 2026, outperforming the Brazilian stock index by 1.9x.",
-    image: "/images/poema.png",
-    tech: ["HTML", "CSS", "JavaScript", "Python"],
+      "Financial indicators for Brazilian public companies, built for value investors.",
+    image: "/images/sponda.png",
+    tech: [
+      "Claude Code", "Codex",
+      "TypeScript", "React", "Next.js", "Tailwind CSS", "TanStack React Query", "Recharts", "Vite", "PostCSS",
+      "Python", "Django", "Django REST Framework", "PostgreSQL", "Redis", "Gunicorn", "Google OAuth", "BRAPI", "Financial Modeling Prep", "Resend",
+      "Vitest", "Testing Library", "Playwright", "pytest", "Factory Boy",
+      "Docker", "Docker Compose", "Nginx", "Let's Encrypt", "DigitalOcean", "systemd", "SSH", "GitHub", "GitHub Actions", "Node.js", "npm", "uv",
+    ],
   },
   {
     name: "Doing It",
@@ -57,16 +65,40 @@ const projects = [
     domain: "doingit.online",
     description: "Minimalist task and time tracker. Type a task name and start the clock.",
     image: "/images/doingit.png",
-    tech: ["Python", "FastAPI", "PostgreSQL", "Playwright", "Stripe", "Docker"],
+    tech: [
+      "Python", "FastAPI", "Uvicorn", "Pydantic",
+      "JavaScript", "HTML", "CSS",
+      "PostgreSQL", "psycopg2",
+      "Stripe", "Resend", "Google OAuth", "JWT", "Bcrypt",
+      "pytest", "Playwright",
+      "PostHog", "Google Analytics",
+      "Docker", "Fly.io", "GitHub Actions", "Makefile",
+    ],
   },
   {
-    name: "Sponda",
-    url: "https://sponda.capital",
-    domain: "sponda.capital",
+    name: "AI Engineering",
+    url: "https://github.com/gusaiani/ai-engineering",
+    domain: "github.com/gusaiani/ai-engineering",
     description:
-      "Financial indicators for Brazilian public companies, built for value investors.",
-    image: "/images/sponda.png",
-    tech: ["Next.js", "React", "TypeScript", "Django", "PostgreSQL", "Tailwind CSS", "Docker"],
+      "Project-based AI engineering curriculum. 13 modules from LLM API basics to multi-agent systems, built for portfolio over credentials.",
+    image: "/images/ai-engineering.png",
+    tech: [
+      "Python", "Anthropic SDK", "OpenAI SDK",
+      "Prompt Engineering", "RAG", "Embeddings", "Semantic Search", "pgvector",
+      "AI Agents", "Tool Use", "Multi-agent Systems", "LangChain", "LangGraph",
+      "Evals", "Observability", "LLMOps",
+      "Streaming", "Fine-tuning", "Multimodal",
+      "FastAPI",
+    ],
+  },
+  {
+    name: "Poema Investimentos",
+    url: "https://poe.ma",
+    domain: "poe.ma",
+    description:
+      "Value investment partnership. 395% cumulative returns from Jan 2017 to Mar 2026, outperforming the Brazilian stock index by 1.9x.",
+    image: "/images/poema.png",
+    tech: ["HTML", "CSS", "JavaScript", "Python"],
   },
   {
     name: "Swankdown",
@@ -84,15 +116,6 @@ const projects = [
     description: "Paintings portfolio.",
     image: "/images/artbr.png",
     tech: ["React", "React Router"],
-  },
-  {
-    name: "AI Engineering",
-    url: "https://github.com/gusaiani/ai-engineering",
-    domain: "github.com/gusaiani/ai-engineering",
-    description:
-      "Project-based AI engineering curriculum. 13 modules from LLM API basics to multi-agent systems, built for portfolio over credentials.",
-    image: "/images/ai-engineering.png",
-    tech: ["Python", "Anthropic SDK", "OpenAI SDK"],
   },
 ];
 
@@ -189,11 +212,7 @@ export default function Home() {
                       <h3 id={exp.company.toLowerCase().replace(/\s+/g, "-")} className="card-name">{exp.company}</h3>
                       <span className="exp-role">{exp.role}</span>
                       <p className="card-description">{exp.description}</p>
-                      <div className="card-tech">
-                        {exp.tech.map((t) => (
-                          <span key={t}>{t}</span>
-                        ))}
-                      </div>
+                      <ExpandableTech tech={exp.tech} />
                     </div>
                   </a>
                 ))}
@@ -222,11 +241,7 @@ export default function Home() {
                       <h3 id={proj.name.toLowerCase().replace(/\s+/g, "-")} className="card-name">{proj.name}</h3>
                       <p className="card-url">{proj.domain}</p>
                       <p className="card-description">{proj.description}</p>
-                      <div className="card-tech">
-                        {proj.tech.map((t) => (
-                          <span key={t}>{t}</span>
-                        ))}
-                      </div>
+                      <ExpandableTech tech={proj.tech} />
                     </div>
                   </a>
                 ))}
