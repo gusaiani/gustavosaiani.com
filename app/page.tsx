@@ -134,9 +134,9 @@ const projects = [
 ];
 
 const skills: [string, string[]][] = [
-  ["Languages", ["JavaScript", "TypeScript", "Node.js", "HTML5", "CSS3", "Python", "Elixir", "Ruby", "Clojure", "SQL", "Shell"]],
+  ["Frontend", ["React 19", "Next.js", "TypeScript", "TanStack (Router, Query)", "Redux", "Apollo", "GraphQL", "Tailwind CSS", "Styled Components", "Mantine", "Recharts", "Storybook", "Vite", "Rspack", "Babel", "Bun", "Webpack", "PostCSS", "Pydantic", "Resend"]],
   ["AI", ["Claude Code", "Codex", "Anthropic SDK", "OpenAI SDK", "Prompt Engineering", "RAG", "Embeddings", "Semantic Search", "AI Agents", "Tool Use", "Multi-agent Systems", "LangChain", "LangGraph", "Evals", "Observability", "LLMOps", "Streaming", "Fine-tuning", "Multimodal", "pgvector"]],
-  ["Libraries", ["React 19", "Next.js", "TanStack (Router, Query)", "Redux", "Apollo", "GraphQL", "Tailwind CSS", "Styled Components", "Mantine", "Recharts", "PostCSS", "Vite", "Rspack", "Babel", "Bun", "Webpack", "Storybook", "Pydantic", "Resend"]],
+  ["Languages", ["JavaScript", "TypeScript", "Node.js", "HTML5", "CSS3", "Python", "Elixir", "Ruby", "Clojure", "SQL", "Shell"]],
   ["Backend", ["Django", "Django REST Framework", "FastAPI", "Ruby on Rails", "ActiveRecord", "Gunicorn", "Uvicorn", "Elasticsearch", "Redis", "Shadow-cljs"]],
   ["Databases", ["PostgreSQL", "pgvector", "Redis"]],
   ["Testing", ["Playwright", "Jest", "Vitest", "Cypress", "pytest", "Factory Boy", "Testing Library", "Codecov"]],
