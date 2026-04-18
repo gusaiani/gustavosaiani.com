@@ -62,7 +62,7 @@ const projects = [
     url: "https://sponda.capital",
     domain: "sponda.capital",
     description:
-      "Financial indicators for Brazilian public companies, built for value investors.",
+      "Financial indicators for public companies worldwide, built for value investors.",
     image: "/images/sponda.png",
     tech: [
       "Claude Code", "Codex",
