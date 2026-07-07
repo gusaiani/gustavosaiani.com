@@ -62,14 +62,27 @@ const projects = [
     url: "https://sponda.capital",
     domain: "sponda.capital",
     description:
-      "Financial indicators for public companies worldwide, built for value investors.",
+      "Fundamental analysis for value investors: inflation-adjusted indicators (PE10, PFCF10), screening, and side-by-side comparison across ~23k listed companies. Designed, built, and operated solo — CI with sharded e2e, Docker, nginx, multi-layer caching.",
     image: "/images/sponda.png",
     tech: [
+      "Python", "Django", "PostgreSQL", "Redis", "TypeScript", "React", "Next.js", "Playwright", "Docker", "GitHub Actions",
+      "Tailwind CSS", "TanStack React Query", "Recharts", "Vite", "PostCSS",
+      "Django REST Framework", "Gunicorn", "Google OAuth", "BRAPI", "Financial Modeling Prep", "Resend",
+      "Vitest", "Testing Library", "pytest", "Factory Boy",
+      "Docker Compose", "Nginx", "Let's Encrypt", "DigitalOcean", "systemd", "SSH", "GitHub", "Node.js", "npm", "uv",
       "Claude Code", "Codex",
-      "TypeScript", "React", "Next.js", "Tailwind CSS", "TanStack React Query", "Recharts", "Vite", "PostCSS",
-      "Python", "Django", "Django REST Framework", "PostgreSQL", "Redis", "Gunicorn", "Google OAuth", "BRAPI", "Financial Modeling Prep", "Resend",
-      "Vitest", "Testing Library", "Playwright", "pytest", "Factory Boy",
-      "Docker", "Docker Compose", "Nginx", "Let's Encrypt", "DigitalOcean", "systemd", "SSH", "GitHub", "GitHub Actions", "Node.js", "npm", "uv",
+    ],
+  },
+  {
+    name: "NoraLab",
+    url: "https://noralab.com.br",
+    domain: "noralab.com.br",
+    description:
+      "AI for healthcare professionals: a WhatsApp agent that books real appointments through Google Calendar, plus clinical note-taking tools. Built and shipped with a team of three.",
+    image: "/images/noralab.png",
+    tech: [
+      "Node.js", "Express", "PostgreSQL", "OpenAI SDK", "Google Calendar API", "Evolution API (WhatsApp)",
+      "Stripe", "Resend", "Sentry", "node-cron",
     ],
   },
   {
@@ -109,9 +122,18 @@ const projects = [
     url: "https://poe.ma",
     domain: "poe.ma",
     description:
-      "Value investment partnership. 395% cumulative returns from Jan 2017 to Mar 2026, outperforming the Brazilian stock index by 1.9x.",
+      "Value investment partnership. 339% cumulative returns from Jan 2017 to Jun 2026, outperforming the Brazilian stock index by 1.8x.",
     image: "/images/poema.png",
     tech: ["HTML", "CSS", "JavaScript", "Python"],
+  },
+  {
+    name: "Plau",
+    url: "https://plau.design",
+    domain: "plau.design",
+    description:
+      "Institutional site and font store for the Brazilian type foundry Plau. Ongoing client work since 2021, alongside two other developers.",
+    image: "/images/plau.png",
+    tech: ["Nuxt", "Vue", "Prismic", "Apollo", "GraphQL", "FontDue", "SSR"],
   },
   {
     name: "Swankdown",
@@ -133,14 +155,14 @@ const projects = [
 ];
 
 const skills: [string, string[]][] = [
-  ["Frontend", ["React 19", "Next.js", "TypeScript", "TanStack (Router, Query)", "Redux", "Apollo", "GraphQL", "Tailwind CSS", "Styled Components", "Mantine", "Recharts", "Storybook", "Vite", "Rspack", "Babel", "Bun", "Webpack", "PostCSS", "Pydantic", "Resend"]],
+  ["Frontend", ["React 19", "Next.js", "TypeScript", "TanStack (Router, Query)", "Redux", "Apollo", "GraphQL", "Tailwind CSS", "Styled Components", "Mantine", "Recharts", "Storybook", "Vite", "Rspack", "Babel", "Bun", "Webpack", "PostCSS"]],
   ["AI", ["Claude Code", "Codex", "Anthropic SDK", "OpenAI SDK", "Prompt Engineering", "RAG", "Embeddings", "Semantic Search", "AI Agents", "Tool Use", "Multi-agent Systems", "LangChain", "LangGraph", "Evals", "Observability", "LLMOps", "Streaming", "Fine-tuning", "Multimodal", "pgvector"]],
   ["Languages", ["JavaScript", "TypeScript", "Node.js", "HTML5", "CSS3", "Python", "Elixir", "Ruby", "Clojure", "SQL", "Shell"]],
-  ["Backend", ["Django", "Django REST Framework", "FastAPI", "Ruby on Rails", "ActiveRecord", "Gunicorn", "Uvicorn", "Elasticsearch", "Redis", "Shadow-cljs"]],
+  ["Backend", ["Django", "Django REST Framework", "FastAPI", "Pydantic", "Ruby on Rails", "ActiveRecord", "Gunicorn", "Uvicorn", "Elasticsearch", "Redis", "Shadow-cljs"]],
   ["Databases", ["PostgreSQL", "pgvector", "Redis"]],
   ["Testing", ["Playwright", "Jest", "Vitest", "Cypress", "pytest", "Factory Boy", "Testing Library", "Codecov"]],
   ["DevOps & Infra", ["Docker", "Docker Compose", "Nginx", "GitHub", "GitHub Actions", "AWS", "DigitalOcean", "Fly.io", "systemd", "SSH", "Let's Encrypt", "Google Cloud Functions", "Husky"]],
-  ["Tools", ["ESLint", "Prettier", "Stylelint", "EditorConfig", "Makefile", "npm", "uv", "PostHog", "Google Analytics", "Google OAuth", "Stripe", "JWT", "Bcrypt", "BRAPI", "Financial Modeling Prep"]],
+  ["Tools & Services", ["PostHog", "Google Analytics", "Google OAuth", "Stripe", "Resend", "Sentry", "JWT", "Bcrypt", "BRAPI", "Financial Modeling Prep"]],
 ];
 
 
@@ -155,6 +177,7 @@ export default function Home() {
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="https://blog.gustavosaiani.com" target="_blank" rel="noopener noreferrer">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -165,11 +188,13 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-top">
             <div className="hero-text">
-              <p className="hero-label">Senior Software Engineer</p>
+              <p className="hero-label">Senior Product Engineer — Full-Stack + AI</p>
               <h1 id="gustavo-saiani" className="hero-name">Gustavo Saiani</h1>
               <p className="hero-title">
-                16 years building high-scale software at companies like Metabase, Toptal, and Spoke.
-                From greenfield MVPs to platforms serving millions. Led engineering teams and managed orgs along the way.
+                I build data-heavy products end to end and ship AI-native. Currently building and
+                operating <a href="https://sponda.capital" target="_blank" rel="noopener noreferrer">sponda.capital</a> solo;
+                before that, five years shipping open-source BI at Metabase. 16 years in software,
+                remote the whole way.
               </p>
             </div>
             <div className="hero-photo-wrap">
@@ -183,7 +208,7 @@ export default function Home() {
             </span>
             <span className="hero-meta-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:gs@gustavosaiani.com">gs@gustavosaiani.com</a>
+              <a href="mailto:gustavo@poe.ma">gustavo@poe.ma</a>
             </span>
             <span className="hero-meta-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
@@ -293,7 +318,8 @@ export default function Home() {
           <div className="footer-contact">
             <h2 id="lets-work-together">Let&apos;s work together</h2>
             <div className="footer-links">
-              <a href="mailto:gs@gustavosaiani.com" className="footer-link">gs@gustavosaiani.com</a>
+              <a href="mailto:gustavo@poe.ma" className="footer-link">gustavo@poe.ma</a>
+              <a href="https://blog.gustavosaiani.com" target="_blank" rel="noopener noreferrer" className="footer-link">Blog</a>
               <a href="https://github.com/gusaiani" target="_blank" rel="noopener noreferrer" className="footer-link">GitHub</a>
               <a href="https://linkedin.com/in/gusaiani" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
               <a href="https://x.com/gustavosaiani" target="_blank" rel="noopener noreferrer" className="footer-link">X</a>
