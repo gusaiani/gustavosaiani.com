@@ -127,15 +127,6 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Python"],
   },
   {
-    name: "Plau",
-    url: "https://plau.design",
-    domain: "plau.design",
-    description:
-      "Institutional site and font store for the Brazilian type foundry Plau. Ongoing client work since 2021, alongside two other developers.",
-    image: "/images/plau.png",
-    tech: ["Nuxt", "Vue", "Prismic", "Apollo", "GraphQL", "FontDue", "SSR"],
-  },
-  {
     name: "Swankdown",
     url: "https://swankdown.gustavosaiani.com",
     domain: "swankdown.gustavosaiani.com",
