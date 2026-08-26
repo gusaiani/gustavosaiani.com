@@ -51,7 +51,9 @@ html {
 }
 
 body {
-  font-family: inherit;
+  /* Kimura Sans (Plau). opsz 12-72 is left on font-optical-sizing: auto, so
+     display sizes pick up the tighter display cut without being asked. */
+  font-family: var(--font-kimura), "Helvetica Neue", Arial, sans-serif;
   background: var(--paper);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
@@ -396,7 +398,9 @@ img {
   font-size: 0.6875rem;
   letter-spacing: 0.08em;
   color: var(--muted);
-  font-family: ui-monospace, "SF Mono", "Cascadia Code", "Segoe UI Mono", Menlo, monospace;
+  /* Carbona's MONO axis pushed to 100 — a mono that belongs to the system. */
+  font-family: var(--font-carbona), ui-monospace, "SF Mono", Menlo, monospace;
+  font-variation-settings: "MONO" 100;
   margin-bottom: 0.875rem;
 }
 

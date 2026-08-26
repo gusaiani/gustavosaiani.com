@@ -9,6 +9,7 @@ Live at [gustavosaiani.com](https://gustavosaiani.com).
 - Single-page layout: hero, experience, projects, skills, contact
 - No CMS — content lives as data arrays in `app/page.tsx`
 - JSON-LD `Person` structured data in `app/layout.tsx`
+- Self-hosted Plau variable fonts in `app/fonts/` — no external font requests
 
 ## Design — "Iro" (色)
 
@@ -53,12 +54,33 @@ site is light-only by design).
   `app/page.tsx` as `plane-${(i + Math.floor(i / 4)) % 4}`, which weaves the
   four planes so no color repeats down a column of the 4-wide grid.
 
-### Typeface
+### Typefaces
 
-[Zen Kaku Gothic New](https://fonts.google.com/specimen/Zen+Kaku+Gothic+New)
-(400/500/700/900) via `next/font/google`, loaded in `app/layout.tsx`. Display
-weights are 900 with tight negative tracking; labels are 500–700 uppercase
-with wide tracking (`0.14em`–`0.3em`).
+Two [Plau](https://plau.design) retail variable fonts, self-hosted via
+`next/font/local` from `app/fonts/` and declared in `app/layout.tsx`. 352 KB
+for the pair; no external font requests.
+
+| Font | File | Axes | Role |
+| --- | --- | --- | --- |
+| **Kimura Sans** (Carlos Mignot) | `KimuraSansVF.woff2` | `opsz 12–72`, `wght 100–900`, `slnt −10–0` | Everything — body through display |
+| **Carbona** (Carlos Mignot) | `CarbonaVF.woff2` | `MONO 0–100`, `wght 200–900`, `slnt −10–0` | Card URLs, pinned to `MONO 100` |
+
+Kimura Sans replaces the Google-hosted Zen Kaku Gothic New the design was
+first drafted in: it is the closest thing in the catalogue to a Japanese
+gothic, which is the right register for a Tanaka homage. Its **optical size
+axis is the reason it carries the whole page alone** — `font-optical-sizing`
+is left at `auto`, so the browser maps `opsz` to the rendered size and the
+display line picks up the tight display cut while body text keeps the open
+one. No manual `font-variation-settings` is needed anywhere except Carbona's
+`MONO`.
+
+Weights in use: 400 body, 500 labels and kickers, 700 the `GS` wordmark,
+900 display (hero name, section titles, card names, footer heading).
+
+Both are licensed under Plau's "Company Size" retail EULA, whose clause 2.4
+covers *"toda a família das fontes selecionadas, incluídos todos os pesos,
+para utilização em desktop, webfonts e aplicativos"* — webfont use is
+explicitly included.
 
 ## Development
 

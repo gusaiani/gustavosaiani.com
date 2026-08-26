@@ -1,12 +1,26 @@
 import type { Metadata } from "next";
-import { Zen_Kaku_Gothic_New } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { FaviconSwitcher } from "./favicon-switcher";
 
-const zenKaku = Zen_Kaku_Gothic_New({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
+// Plau retail typefaces, self-hosted as variable fonts.
+// Kimura Sans carries the whole system: opsz 12-72 means browsers give
+// headlines a true display cut automatically, wght 100-900 covers body
+// through the poster-weight display.
+const kimura = localFont({
+  src: "./fonts/KimuraSansVF.woff2",
+  weight: "100 900",
   display: "swap",
+  variable: "--font-kimura",
+});
+
+// Carbona's MONO axis (0-100) gives a mono that belongs to the same
+// system as Kimura, instead of falling back to the OS monospace.
+const carbona = localFont({
+  src: "./fonts/CarbonaVF.woff2",
+  weight: "200 900",
+  display: "swap",
+  variable: "--font-carbona",
 });
 
 export const metadata: Metadata = {
@@ -49,7 +63,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={zenKaku.className}>
+      <body className={`${kimura.variable} ${carbona.variable}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
