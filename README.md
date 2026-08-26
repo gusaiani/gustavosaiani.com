@@ -45,7 +45,12 @@ light-only by design.
   section label, the rule under an inline link). Section labels stay ink so
   they keep full contrast. The hinomaru sits at 4% and `z-index: -1`, so it
   reads as a tint and bleeds past the hero rule instead of being clipped by
-  the next section.
+  the next section. Because it also bleeds past the right edge, `html` and
+  `body` carry `overflow-x: clip` rather than `hidden`: `hidden` still lets
+  the layout viewport widen on a phone, which pans the page sideways, and it
+  would force `overflow-y` to `auto` and kill the downward bleed. `clip`
+  contains the disc horizontally while leaving the vertical bleed intact.
+  An `overflow-x: hidden` declaration precedes it as the fallback.
 - **Vermilion is identity; gold is interaction.** The wordmark carries the
   full name, so the hero needs no display heading. The `h1` stays in the
   markup, visually hidden, to keep the document outline and the

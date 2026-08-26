@@ -178,7 +178,7 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-top">
             <div className="hero-text">
-              <p className="hero-label">Senior Product Engineer. Full-Stack + AI</p>
+              <p className="hero-label">Senior Product Engineer.<br /> Full-Stack + AI</p>
               <h1 id="gustavo-saiani" className="visually-hidden">Gustavo Saiani</h1>
               <div className="hero-title">
                 <p>I build data-heavy products end to end and ship AI-native.</p>
