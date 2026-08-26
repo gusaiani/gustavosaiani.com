@@ -56,12 +56,6 @@ body {
      display sizes pick up the tighter display cut without being asked. */
   font-family: var(--font-kimura), "Helvetica Neue", Arial, sans-serif;
   background-color: var(--paper);
-  background-image: radial-gradient(
-    circle 280px at calc(100% - 150px) 130px,
-    rgba(226, 58, 46, 0.04) 0 99.5%,
-    rgba(226, 58, 46, 0) 100%
-  );
-  background-repeat: no-repeat;
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -164,6 +158,10 @@ img {
 
 .hero-text {
   flex: 1;
+  /* The kicker, the line and the links read as one block, nudged 20px down so
+     it sits below the avatar's centre rather than level with it. */
+  position: relative;
+  top: 20px;
 }
 
 .hero-photo-wrap {
@@ -239,7 +237,7 @@ img {
 .hero-meta {
   display: flex;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   flex-wrap: wrap;
   opacity: 0;
   animation: fadeUp 0.6s ease 0.3s forwards;
@@ -602,6 +600,12 @@ img {
     gap: 1.75rem;
   }
 
+  /* Stacked, the avatar sits above the copy, so the 20px nudge has nothing to
+     offset against. */
+  .hero-text {
+    top: 0;
+  }
+
   .hero-photo {
     width: 118px;
     height: 118px;
@@ -609,14 +613,6 @@ img {
 }
 
 @media (max-width: 600px) {
-  body {
-    background-image: radial-gradient(
-      circle 190px at calc(100% - 80px) 80px,
-      rgba(226, 58, 46, 0.04) 0 99.5%,
-      rgba(226, 58, 46, 0) 100%
-    );
-  }
-
   .hero-label br {
     display: inline;
   }
