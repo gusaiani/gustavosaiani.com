@@ -48,8 +48,6 @@
 html {
   scroll-behavior: smooth;
   color-scheme: light;
-  overflow-x: hidden; /* fallback for engines without `clip` */
-  overflow-x: clip;
 }
 
 body {
@@ -61,8 +59,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.65;
-  overflow-x: hidden; /* fallback for engines without `clip` */
-  overflow-x: clip;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@supports (overflow-x: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
 }
 
 a {
