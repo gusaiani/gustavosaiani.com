@@ -102,19 +102,18 @@ const projects = [
     ],
   },
   {
-    name: "AI Engineering",
-    url: "https://github.com/gusaiani/ai-engineering",
-    domain: "github.com/gusaiani/ai-engineering",
+    name: "NovaCRM Support Agent",
+    url: "https://ai-tech-support.gustavosaiani.com",
+    domain: "ai-tech-support.gustavosaiani.com",
     description:
-      "Project-based AI engineering curriculum. 13 modules from LLM API basics to multi-agent systems, built for portfolio over credentials.",
+      "Live AI support agent: a router hands off to specialist agents, which answer from a ChromaDB knowledge base over tool calls, streamed token by token. Semantic caching, per-customer rate limiting, and per-request cost and token accounting. Capstone of a 15-module AI engineering curriculum built for portfolio over credentials.",
     image: "/images/ai-engineering.png",
     tech: [
-      "Python", "Anthropic SDK", "OpenAI SDK",
-      "Prompt Engineering", "RAG", "Embeddings", "Semantic Search", "pgvector",
-      "AI Agents", "Tool Use", "Multi-agent Systems", "LangChain", "LangGraph",
-      "Evals", "Observability", "LLMOps",
-      "Streaming", "Fine-tuning", "Multimodal",
-      "FastAPI",
+      "Python", "OpenAI SDK", "FastAPI", "Uvicorn", "Pydantic",
+      "RAG", "ChromaDB", "Embeddings", "Semantic Search", "Semantic Cache",
+      "AI Agents", "Tool Use", "Multi-agent Systems", "Router",
+      "SSE Streaming", "Rate Limiting", "Evals", "Langfuse", "Observability", "LLMOps",
+      "Nginx", "systemd", "Let's Encrypt", "DigitalOcean",
     ],
   },
   {
