@@ -113,6 +113,13 @@ node scripts/screenshots.mjs
 
 Add new sites to the `sites` array in that script and re-run.
 
+`ai-engineering.png` is the exception: it shows the NovaCRM Support Agent
+mid-answer, so it cannot be captured by a plain page load. Regenerate it by
+driving the UI, filling `#prompt`, clicking `#send`, and waiting for the
+streamed reply to stop growing before shooting at 1440x900. Pick a question
+that misses the semantic cache, otherwise the capture shows a cache hit
+instead of the router and tool-call chips.
+
 ## Deploy
 
 Pushes to `main` deploy via GitHub Actions (`.github/workflows/deploy.yml`).
