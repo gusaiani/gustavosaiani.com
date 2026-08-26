@@ -163,7 +163,7 @@ export default function Home() {
       {/* Nav */}
       <nav className="nav">
         <div className="nav-inner">
-          <span className="nav-logo">GS</span>
+          <span className="nav-logo">Gustavo Saiani</span>
           <ul className="nav-links">
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -180,7 +180,7 @@ export default function Home() {
           <div className="hero-top">
             <div className="hero-text">
               <p className="hero-label">Senior Product Engineer — Full-Stack + AI</p>
-              <h1 id="gustavo-saiani" className="hero-name">Gustavo Saiani</h1>
+              <h1 id="gustavo-saiani" className="visually-hidden">Gustavo Saiani</h1>
               <p className="hero-title">
                 I build data-heavy products end to end and ship AI-native. Currently building and
                 operating <a href="https://sponda.capital" target="_blank" rel="noopener noreferrer">sponda.capital</a> solo;

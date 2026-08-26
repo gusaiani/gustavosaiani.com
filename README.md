@@ -23,10 +23,11 @@ site is light-only by design).
 
 | Token | Value | Role |
 | --- | --- | --- |
-| `--paper` | `#f1ede3` | Page ground |
-| `--canvas` | `#fbf9f3` | Card ground |
-| `--gray` | `#ddd7c8` | Tech-chip ground |
-| `--ink` | `#17151a` | Body text, every rule and border |
+| `--paper` | `#ffffff` | Page ground |
+| `--canvas` | `#ffffff` | Card ground |
+| `--gray` | `#eeeae1` | Tech-chip ground |
+| `--ink` | `#17151a` | Body text |
+| `--rule` / `--rule-strong` / `--rule-on-plane` | `#e4dfd5` / `#d5cfc2` / `rgba(23,21,26,.2)` | Hairlines — dividers, card edges, plane underlines |
 | `--muted` | `#6b675e` | Secondary text |
 | `--hot` | `#e23a2e` | Vermilion — identity pigment |
 | `--gold` | `#c8a03c` | Gold — interaction pigment |
@@ -42,13 +43,25 @@ site is light-only by design).
   as text on paper, so they only ever appear as a *ground* (the `GS` wordmark
   plane, chips, the hinomaru wash) or as a *mark* (the square before each
   section label, the rule under an inline link). Section labels stay ink so
-  they keep full contrast.
-- **Vermilion is identity; gold is interaction.** The wordmark, the portrait
-  ring, the hinomaru, and the section-label squares are vermilion. Hover
+  they keep full contrast. The hinomaru sits at 4% and `z-index: -1`, so it
+  reads as a tint and bleeds past the hero rule instead of being clipped by
+  the next section.
+- **Vermilion is identity; gold is interaction.** The wordmark — which
+  carries the full name, so the hero needs no display heading (the `h1`
+  stays in the markup, visually hidden, to keep the document outline and the
+  `#gustavo-saiani` anchor) — plus the portrait ring, the hinomaru, and the
+  section-label squares are vermilion. Hover
   states, the role rule on experience cards, and nav hover are gold.
-- **Zero radius, hard edges.** The only circles are the portrait and the
-  hinomaru — they rhyme with each other on purpose. Card hover is a hard
-  6px ink offset shadow, not a blur.
+- **Hairlines, not hard rules.** Every divider and border is a warm hairline
+  rather than black ink; the graphic weight comes from the colour planes and
+  the dark bar, not from outlines. Card hover is a 10% ink offset shadow —
+  a flat displacement, never a blur.
+- **The label square is cap-height.** `.section-label::before` is sized in
+  `1cap` and aligned to the baseline, so the square's top and bottom edges
+  land exactly on the cap and baseline of the E beside it. A `0.72em`
+  declaration precedes it as the fallback for engines without `cap`.
+- **Cards carry an 8px radius; nothing else does.** The portrait and the
+  hinomaru are the only circles, and they rhyme on purpose.
 - **Planes, not borders, carry the skills grid.** The eight skill groups are
   solid cut planes separated by 1px ink gaps. The color is chosen in
   `app/page.tsx` as `plane-${(i + Math.floor(i / 4)) % 4}`, which weaves the

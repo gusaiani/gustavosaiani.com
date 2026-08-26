@@ -7,7 +7,7 @@
 
 :root {
   /* ground */
-  --paper: #fbfaf7;
+  --paper: #ffffff;
   --canvas: #ffffff;
   --gray: #eeeae1;
 
@@ -108,10 +108,10 @@ img {
 .nav-logo {
   background: var(--hot);
   color: var(--paper);
-  padding: 0.4rem 0.85rem;
+  padding: 0.55rem 0.85rem 0.475rem;
   font-size: 0.9375rem;
   font-weight: 700;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   line-height: 1;
 }
@@ -148,13 +148,16 @@ img {
 .hero::before {
   content: "";
   position: absolute;
-  top: -180px;
-  right: -140px;
-  width: 600px;
-  height: 600px;
+  top: -150px;
+  right: -130px;
+  width: 560px;
+  height: 560px;
   border-radius: 50%;
   background: var(--hot);
-  opacity: 0.09;
+  opacity: 0.04;
+  /* Behind every section background so it bleeds past the hero's bottom rule
+     instead of being clipped by the next (positioned) section. */
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -194,27 +197,29 @@ img {
   font-weight: 500;
   letter-spacing: 0.3em;
   color: var(--ink);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeUp 0.6s ease forwards;
 }
 
-.hero-name {
-  font-size: clamp(2.5rem, 5.5vw, 4rem);
-  font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -0.035em;
-  color: var(--ink);
-  margin-bottom: 1rem;
-  opacity: 0;
-  animation: fadeUp 0.6s ease 0.1s forwards;
+/* Visually hidden, still in the accessibility tree and the document outline. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
 .hero-title {
-  font-size: clamp(0.9375rem, 1.5vw, 1.0625rem);
+  font-size: clamp(1rem, 1.6vw, 1.1875rem);
   font-weight: 400;
   color: var(--muted);
-  max-width: 560px;
+  max-width: 620px;
   line-height: 1.7;
   opacity: 0;
   animation: fadeUp 0.6s ease 0.2s forwards;
@@ -286,18 +291,21 @@ img {
   letter-spacing: 0.24em;
   color: var(--ink);
   margin-bottom: 0.875rem;
-  display: flex;
-  align-items: center;
-  gap: 0.75em;
 }
 
 /* The vermilion square carries the accent so the label keeps full contrast. */
+/* 1cap makes the square exactly cap-height; baseline alignment sits it on the
+   same baseline as the E, so square and letters share top and bottom edges. */
 .section-label::before {
   content: "";
-  width: 10px;
-  height: 10px;
+  display: inline-block;
+  width: 0.72em;
+  height: 0.72em;
+  width: 1cap;
+  height: 1cap;
+  margin-right: 0.75em;
+  vertical-align: baseline;
   background: var(--hot);
-  flex-shrink: 0;
 }
 
 .section-title {
@@ -339,6 +347,7 @@ img {
 .card {
   background: var(--canvas);
   border: 1px solid var(--rule-strong);
+  border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: block;
