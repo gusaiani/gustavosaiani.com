@@ -293,8 +293,8 @@ export default function Home() {
             <h2 id="technical-toolkit" className="section-title">Technical toolkit</h2>
           </div>
           <div className="skills-section">
-            {skills.map(([group, items]) => (
-              <div key={group}>
+            {skills.map(([group, items], i) => (
+              <div key={group} className={`skill-group plane-${(i + Math.floor(i / 4)) % 4}`}>
                 <h3 id={group.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")} className="skill-group-title">{group}</h3>
                 <ExpandableTech tech={items} limit={10} listClassName="skill-list" tagClassName="skill-tag" />
               </div>

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
 import { FaviconSwitcher } from "./favicon-switcher";
 
-const jakarta = Plus_Jakarta_Sans({
+const zenKaku = Zen_Kaku_Gothic_New({
   subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
   display: "swap",
 });
 
@@ -48,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jakarta.className}>
+      <body className={zenKaku.className}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
