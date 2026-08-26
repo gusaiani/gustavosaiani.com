@@ -7,13 +7,18 @@
 
 :root {
   /* ground */
-  --paper: #f1ede3;
-  --canvas: #fbf9f3;
-  --gray: #ddd7c8;
+  --paper: #fbfaf7;
+  --canvas: #ffffff;
+  --gray: #eeeae1;
 
   /* ink */
   --ink: #17151a;
   --muted: #6b675e;
+
+  /* rules — hairlines, not hard black */
+  --rule: #e4dfd5;
+  --rule-strong: #d5cfc2;
+  --rule-on-plane: rgba(23, 21, 26, 0.2);
 
   /* pigment */
   --hot: #e23a2e;
@@ -27,7 +32,7 @@
 
   /* dark bar (nav + footer) */
   --bar: #17151a;
-  --bar-ink: #f1ede3;
+  --bar-ink: #f4f1ea;
   --bar-muted: #a8a49b;
   --bar-line: #3a3740;
 
@@ -147,7 +152,7 @@ img {
   height: 600px;
   border-radius: 50%;
   background: var(--hot);
-  opacity: 0.1;
+  opacity: 0.09;
   pointer-events: none;
 }
 
@@ -304,7 +309,7 @@ img {
 .section-divider {
   width: 100%;
   height: 1px;
-  background: var(--ink);
+  background: var(--rule);
   border: none;
   margin: 0;
 }
@@ -331,7 +336,7 @@ img {
 /* Cards are flat planes with a hard ink edge — no radius, no blur. */
 .card {
   background: var(--canvas);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--rule-strong);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: block;
@@ -339,13 +344,14 @@ img {
 
 .card:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 6px 6px 0 var(--ink);
+  border-color: var(--ink);
+  box-shadow: 6px 6px 0 rgba(23, 21, 26, 0.1);
 }
 
 .card-thumb {
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--rule-strong);
 }
 
 .card-thumb img {
@@ -442,8 +448,8 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
-  background: var(--ink);
-  border: 1px solid var(--ink);
+  background: var(--rule);
+  border: 1px solid var(--rule);
 }
 
 .skill-group {
@@ -463,7 +469,7 @@ img {
   color: var(--ink);
   margin-bottom: 1.125rem;
   padding-bottom: 0.625rem;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--rule-on-plane);
 }
 
 .skill-list {
