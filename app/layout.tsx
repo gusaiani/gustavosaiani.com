@@ -24,14 +24,14 @@ const carbona = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Gustavo Saiani — Senior Product Engineer · Full-Stack + AI",
+  title: "Gustavo Saiani · Senior Product Engineer · Full-Stack + AI",
   description:
-    "Senior product engineer building data-heavy products end to end — currently sponda.capital. 16 years remote. React, TypeScript, Python, Django, LLMs. Ex-Metabase.",
+    "Senior product engineer building data-heavy products end to end. Currently sponda.capital. 16 years remote. React, TypeScript, Python, Django, LLMs. Ex-Metabase.",
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "Gustavo Saiani — Senior Product Engineer · Full-Stack + AI",
+    title: "Gustavo Saiani · Senior Product Engineer · Full-Stack + AI",
     description:
       "Builds data-heavy products end to end and ships AI-native. Currently building sponda.capital; five years at Metabase before that.",
     url: "https://gustavosaiani.com",

@@ -5,7 +5,7 @@ const experience = [
     company: "Metabase",
     url: "https://www.metabase.com",
     role: "Senior Software Engineer",
-    period: "May 2021 — Feb 2026",
+    period: "May 2021 - Feb 2026",
     description:
       "Delivered core features of the open-source BI platform used by 90,000+ organizations including enterprise and government clients. Improved application performance as the company grew revenues ten-fold. Revitalized public-facing projects through SEO and LLM optimization, contributing to growth from 30k to 90k customers.",
     tech: [
@@ -23,7 +23,7 @@ const experience = [
     company: "Spoke",
     url: "https://www.spoke.com",
     role: "Team Lead: Web Front-end",
-    period: "Mar 2020 — Apr 2021",
+    period: "Mar 2020 - Apr 2021",
     description:
       "Led development of a greenfield React application enabling real-time package tracking, now supporting over 1 billion parcel deliveries annually. Elevated code coverage from 0% to 70%, reducing bugs by 70%. Assembled and managed a team of React developers.",
     tech: ["React", "Node.js", "Jest", "Cypress", "Google Cloud Functions"],
@@ -33,7 +33,7 @@ const experience = [
     company: "Toptal",
     url: "https://www.toptal.com",
     role: "Engineering Manager & Senior Software Engineer",
-    period: "Jul 2018 — Mar 2020",
+    period: "Jul 2018 - Mar 2020",
     description:
       "Helped drive over $200M in annual revenue building a Freelancer Profile app serving 7,000+ freelancers across 140+ countries. Built public-facing pages with SSR, achieving $4 per-visit revenues. Implemented A/B testing and personalization during 20% YoY company growth.",
     tech: [
@@ -48,7 +48,7 @@ const experience = [
     company: "EmCasa",
     url: "https://www.emcasa.com",
     role: "Co-founder & CTO",
-    period: "Jun 2017 — Jul 2018",
+    period: "Jun 2017 - Jul 2018",
     description:
       "Designed and launched a real estate marketplace MVP using React and Elixir. Raised $1M in seed funding and facilitated the sale of dozens of properties in its first months of operation.",
     tech: ["React", "Elixir", "React Native"],
@@ -62,7 +62,7 @@ const projects = [
     url: "https://sponda.capital",
     domain: "sponda.capital",
     description:
-      "Fundamental analysis for value investors: inflation-adjusted indicators (PE10, PFCF10), screening, and side-by-side comparison across ~23k listed companies. Designed, built, and operated solo — CI with sharded e2e, Docker, nginx, multi-layer caching.",
+      "Fundamental analysis for value investors: inflation-adjusted indicators (PE10, PFCF10), screening, and side-by-side comparison across ~23k listed companies. Designed, built, and operated solo. CI with sharded e2e, Docker, nginx, multi-layer caching.",
     image: "/images/sponda.png",
     tech: [
       "Python", "Django", "PostgreSQL", "Redis", "TypeScript", "React", "Next.js", "Playwright", "Docker", "GitHub Actions",
@@ -179,24 +179,23 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-top">
             <div className="hero-text">
-              <p className="hero-label">Senior Product Engineer — Full-Stack + AI</p>
+              <p className="hero-label">Senior Product Engineer. Full-Stack + AI</p>
               <h1 id="gustavo-saiani" className="visually-hidden">Gustavo Saiani</h1>
-              <p className="hero-title">
-                I build data-heavy products end to end and ship AI-native. Currently building and
-                operating <a href="https://sponda.capital" target="_blank" rel="noopener noreferrer">sponda.capital</a> solo;
-                before that, five years shipping open-source BI at Metabase. 16 years in software,
-                remote the whole way.
-              </p>
+              <div className="hero-title">
+                <p>I build data-heavy products end to end and ship AI-native.</p>
+                <p>
+                  Currently building and operating{" "}
+                  <a href="https://sponda.capital" target="_blank" rel="noopener noreferrer">sponda.capital</a> solo.
+                </p>
+                <p>Before that, five years shipping open-source BI at Metabase.</p>
+                <p>16 years in software, remote the whole way.</p>
+              </div>
             </div>
             <div className="hero-photo-wrap">
               <img src="/images/gustavo.png" alt="Gustavo Saiani" className="hero-photo" />
             </div>
           </div>
           <div className="hero-meta">
-            <span className="hero-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Rio de Janeiro, Brazil
-            </span>
             <span className="hero-meta-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               <a href="mailto:gustavo@poe.ma">gustavo@poe.ma</a>

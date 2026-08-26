@@ -1,5 +1,5 @@
 /*
- * Iro (色) — after Ikko Tanaka's color-plane posters.
+ * Iro (色), after Ikko Tanaka's color-plane posters.
  * Warm paper, hard ink rules, zero radius. Color lives in planes and marks,
  * never in body text: vermilion is identity, gold is interaction,
  * the wheat/tea/violet/mizu planes are ground.
@@ -15,7 +15,7 @@
   --ink: #17151a;
   --muted: #6b675e;
 
-  /* rules — hairlines, not hard black */
+  /* rules: hairlines, not hard black */
   --rule: #e4dfd5;
   --rule-strong: #d5cfc2;
   --rule-on-plane: rgba(23, 21, 26, 0.2);
@@ -104,7 +104,7 @@ img {
   height: 60px;
 }
 
-/* The wordmark is a solid vermilion plane — the one mark that carries pigment. */
+/* The wordmark is a solid vermilion plane: the one mark that carries pigment. */
 .nav-logo {
   background: var(--hot);
   color: var(--paper);
@@ -189,7 +189,7 @@ img {
   border-radius: 50%;
   object-fit: cover;
   object-position: center 20%;
-  border: 3px solid var(--hot);
+  border: 1px solid var(--rule-strong);
 }
 
 .hero-label {
@@ -226,6 +226,10 @@ img {
 }
 
 /* Inline links: ink text, vermilion rule. The colour marks, it doesn't shout. */
+.hero-title p + p {
+  margin-top: 0.7rem;
+}
+
 .hero-title a {
   color: var(--ink);
   font-weight: 500;
@@ -343,7 +347,7 @@ img {
   gap: 1.75rem;
 }
 
-/* Cards are flat planes with a hard ink edge — no radius, no blur. */
+/* Cards: hairline edge, 8px radius, flat offset shadow instead of a blur. */
 .card {
   background: var(--canvas);
   border: 1px solid var(--rule-strong);
@@ -407,7 +411,7 @@ img {
   font-size: 0.6875rem;
   letter-spacing: 0.08em;
   color: var(--muted);
-  /* Carbona's MONO axis pushed to 100 — a mono that belongs to the system. */
+  /* Carbona's MONO axis pushed to 100, so the mono belongs to the system. */
   font-family: var(--font-carbona), ui-monospace, "SF Mono", Menlo, monospace;
   font-variation-settings: "MONO" 100;
   margin-bottom: 0.875rem;
