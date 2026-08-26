@@ -48,29 +48,24 @@
 html {
   scroll-behavior: smooth;
   color-scheme: light;
+  background-color: var(--paper);
 }
 
 body {
   /* Kimura Sans (Plau). opsz 12-72 is left on font-optical-sizing: auto, so
      display sizes pick up the tighter display cut without being asked. */
   font-family: var(--font-kimura), "Helvetica Neue", Arial, sans-serif;
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image: radial-gradient(
+    circle 280px at calc(100% - 150px) 130px,
+    rgba(226, 58, 46, 0.04) 0 99.5%,
+    rgba(226, 58, 46, 0) 100%
+  );
+  background-repeat: no-repeat;
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.65;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-@supports (overflow-x: clip) {
-  html,
-  body {
-    overflow-x: clip;
-  }
 }
 
 a {
@@ -153,23 +148,6 @@ img {
   justify-content: center;
   padding: 6.5rem 2rem 3.5rem;
   position: relative;
-}
-
-/* Hinomaru: a vermilion disc bleeding off the corner, kept to a wash. */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: -150px;
-  right: -130px;
-  width: 560px;
-  height: 560px;
-  border-radius: 50%;
-  background: var(--hot);
-  opacity: 0.04;
-  /* Behind every section background so it bleeds past the hero's bottom rule
-     instead of being clipped by the next (positioned) section. */
-  z-index: -1;
-  pointer-events: none;
 }
 
 .hero-content {
@@ -631,6 +609,14 @@ img {
 }
 
 @media (max-width: 600px) {
+  body {
+    background-image: radial-gradient(
+      circle 190px at calc(100% - 80px) 80px,
+      rgba(226, 58, 46, 0.04) 0 99.5%,
+      rgba(226, 58, 46, 0) 100%
+    );
+  }
+
   .hero-label br {
     display: inline;
   }
@@ -645,13 +631,6 @@ img {
 
   .hero {
     padding: 5.5rem 1.25rem 2.5rem;
-  }
-
-  .hero::before {
-    width: 380px;
-    height: 380px;
-    top: -110px;
-    right: -110px;
   }
 
   .section {

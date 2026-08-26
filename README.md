@@ -43,14 +43,15 @@ light-only by design.
   as text on paper, so they only ever appear as a *ground* (the wordmark
   plane, chips, the hinomaru wash) or as a *mark* (the square before each
   section label, the rule under an inline link). Section labels stay ink so
-  they keep full contrast. The hinomaru sits at 4% and `z-index: -1`, so it
-  reads as a tint and bleeds past the hero rule instead of being clipped by
-  the next section. Because it also bleeds past the right edge, `html` and
-  `body` carry `overflow-x: clip` rather than `hidden`: `hidden` still lets
-  the layout viewport widen on a phone, which pans the page sideways, and it
-  would force `overflow-y` to `auto` and kill the downward bleed. `clip`
-  contains the disc horizontally while leaving the vertical bleed intact.
-  An `overflow-x: hidden` declaration precedes it as the fallback.
+  they keep full contrast. The hinomaru is a 4% `radial-gradient` on `body`,
+  **not** a positioned element. That is deliberate: a background never
+  contributes to scrollable overflow, so it cannot widen the layout viewport,
+  and being on `body` it still bleeds past the hero rule. An absolutely
+  positioned disc hanging off the right edge widened the layout viewport to
+  501px against a 390px screen, and iOS Safari lays out at that widened width
+  even under `overflow-x: clip`: body text wrapped past the screen edge and
+  was chopped. There is now no `overflow-x` containment anywhere, because
+  nothing overflows.
 - **Vermilion is identity; gold is interaction.** The wordmark carries the
   full name, so the hero needs no display heading. The `h1` stays in the
   markup, visually hidden, to keep the document outline and the
@@ -124,6 +125,24 @@ driving the UI, filling `#prompt`, clicking `#send`, and waiting for the
 streamed reply to stop growing before shooting at 1440x900. Pick a question
 that misses the semantic cache, otherwise the capture shows a cache hit
 instead of the router and tool-call chips.
+
+## Overflow test
+
+```bash
+npm run test:overflow                          # against localhost:3000
+npm run test:overflow -- https://gustavosaiani.com/
+```
+
+Checks Chromium and WebKit across ten viewport widths plus three iPhone
+profiles, asserting that no element crosses the viewport edge and that the
+layout viewport never exceeds the visual one.
+
+It forces `overflow-x: visible` on the root before measuring, which matters:
+root-level `overflow-x: clip` or `hidden` makes a page *look* fixed, because it
+can no longer be scrolled sideways, while iOS Safari still lays content out at
+the widened width and clips the overhang. Asserting "cannot scroll sideways" is
+therefore not enough, and passed while the page was visibly broken on a real
+phone. The assertion that holds is that nothing overflows at all.
 
 ## Deploy
 
