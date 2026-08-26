@@ -147,3 +147,26 @@ phone. The assertion that holds is that nothing overflows at all.
 ## Deploy
 
 Pushes to `main` deploy via GitHub Actions (`.github/workflows/deploy.yml`).
+The build is a static export (`output: "export"`), rsynced with `--delete` to
+`/var/www/gustavosaiani.com/public_html` on `poe.ma`, served by nginx.
+
+### Server config
+
+nginx is configured at `/etc/nginx/sites-enabled/gustavosaiani.com.conf`. Two
+rules there matter, and both exist because of a real bug:
+
+| Rule | Why |
+| --- | --- |
+| `try_files $uri $uri.html $uri/ =404` | A static export has no client router, so a missing file must 404. The previous `/index.html` fallback answered every unknown path with the homepage at status 200, including requests for assets. |
+| `Cache-Control: no-cache` on HTML, `immutable` on `/_next/static/` | The HTML must never be cached, because it names content-hashed asset URLs that `rsync --delete` removes on the next deploy. The hashed assets themselves can be cached forever. |
+
+Together those two gaps caused the webfonts to appear broken on other people's
+machines. A visitor holding HTML from an earlier deploy requested a CSS or font
+URL that no longer existed, the catch-all returned `index.html` with status
+`200 text/html`, the browser rejected the stylesheet on MIME mismatch, and the
+page rendered with no CSS and therefore no Kimura Sans. Nothing errored
+visibly, which is why it only showed up as "the font is not loading".
+
+`gzip_types` is set on this vhost (the global nginx default gzips `text/html`
+only, leaving CSS and JS uncompressed), and `font/woff2` was added to
+`/etc/nginx/mime.types`, which nginx 1.18 ships without.
