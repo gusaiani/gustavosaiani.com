@@ -74,15 +74,18 @@ const projects = [
     ],
   },
   {
-    name: "NoraLab",
-    url: "https://noralab.com.br",
-    domain: "noralab.com.br",
+    name: "NovaCRM Support Agent",
+    url: "https://ai-tech-support.gustavosaiani.com",
+    domain: "ai-tech-support.gustavosaiani.com",
     description:
-      "AI for healthcare professionals: a WhatsApp agent that books real appointments through Google Calendar, plus clinical note-taking tools. Built and shipped with a team of three.",
-    image: "/images/noralab.png",
+      "Live AI support agent: a router hands off to specialist agents, which answer from a ChromaDB knowledge base over tool calls, streamed token by token. Semantic caching, per-customer rate limiting, and per-request cost and token accounting. Capstone of a 15-module AI engineering curriculum built for portfolio over credentials.",
+    image: "/images/ai-engineering.png",
     tech: [
-      "Node.js", "Express", "PostgreSQL", "OpenAI SDK", "Google Calendar API", "Evolution API (WhatsApp)",
-      "Stripe", "Resend", "Sentry", "node-cron",
+      "Python", "OpenAI SDK", "FastAPI", "Uvicorn", "Pydantic",
+      "RAG", "ChromaDB", "Embeddings", "Semantic Search", "Semantic Cache",
+      "AI Agents", "Tool Use", "Multi-agent Systems", "Router",
+      "SSE Streaming", "Rate Limiting", "Evals", "Langfuse", "Observability", "LLMOps",
+      "Nginx", "systemd", "Let's Encrypt", "DigitalOcean",
     ],
   },
   {
@@ -102,21 +105,6 @@ const projects = [
     ],
   },
   {
-    name: "NovaCRM Support Agent",
-    url: "https://ai-tech-support.gustavosaiani.com",
-    domain: "ai-tech-support.gustavosaiani.com",
-    description:
-      "Live AI support agent: a router hands off to specialist agents, which answer from a ChromaDB knowledge base over tool calls, streamed token by token. Semantic caching, per-customer rate limiting, and per-request cost and token accounting. Capstone of a 15-module AI engineering curriculum built for portfolio over credentials.",
-    image: "/images/ai-engineering.png",
-    tech: [
-      "Python", "OpenAI SDK", "FastAPI", "Uvicorn", "Pydantic",
-      "RAG", "ChromaDB", "Embeddings", "Semantic Search", "Semantic Cache",
-      "AI Agents", "Tool Use", "Multi-agent Systems", "Router",
-      "SSE Streaming", "Rate Limiting", "Evals", "Langfuse", "Observability", "LLMOps",
-      "Nginx", "systemd", "Let's Encrypt", "DigitalOcean",
-    ],
-  },
-  {
     name: "Poema Investimentos",
     url: "https://poe.ma",
     domain: "poe.ma",
@@ -126,21 +114,16 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Python"],
   },
   {
-    name: "Swankdown",
-    url: "https://swankdown.gustavosaiani.com",
-    domain: "swankdown.gustavosaiani.com",
+    name: "NoraLab",
+    url: "https://noralab.com.br",
+    domain: "noralab.com.br",
     description:
-      "Transforms Markdown into beautifully typeset reading pages with refined typography.",
-    image: "/images/swankdown.png",
-    tech: ["Node.js", "JavaScript"],
-  },
-  {
-    name: "Art Portfolio",
-    url: "https://gustavosaiani.art.br",
-    domain: "gustavosaiani.art.br",
-    description: "Paintings portfolio.",
-    image: "/images/artbr.png",
-    tech: ["React", "React Router"],
+      "AI for healthcare professionals: a WhatsApp agent that books real appointments through Google Calendar, plus clinical note-taking tools. Built and shipped with a team of three.",
+    image: "/images/noralab.png",
+    tech: [
+      "Node.js", "Express", "PostgreSQL", "OpenAI SDK", "Google Calendar API", "Evolution API (WhatsApp)",
+      "Stripe", "Resend", "Sentry", "node-cron",
+    ],
   },
 ];
 
