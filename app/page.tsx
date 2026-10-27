@@ -78,7 +78,7 @@ const projects = [
     url: "https://plau.design",
     domain: "plau.design",
     description:
-      "In-house font marketplace for a Brazilian type foundry: catalog, checkout, licensing, and delivery. Stripe abroad, Mercado Pago cards with installments and Pix in Brazil. A portal where designers and foundries set their own prices, coupons, and launch tiers, upload fonts, and track sales and royalties. Portuguese, English, and Spanish. Per-PR preview environments behind a staging gate.",
+      "In-house font marketplace for a Brazilian type foundry: catalog, checkout, licensing, and delivery. Stripe abroad, Mercado Pago cards with installments and Pix in Brazil. A portal where designers and foundries set their own prices, coupons, and launch tiers, upload fonts, and track sales and royalties. Portuguese, English, and Spanish.",
     image: "/images/plau.png",
     tech: [
       "Python", "Django", "PostgreSQL", "Vue", "Nuxt", "JavaScript",
