@@ -126,6 +126,11 @@ streamed reply to stop growing before shooting at 1440x900. Pick a question
 that misses the semantic cache, otherwise the capture shows a cache hit
 instead of the router and tool-call chips.
 
+`plau.png` needs two tweaks the script does not make: plau.design never
+reaches `networkidle` (the hero video keeps the network busy), so wait for
+`load` instead, and click "Reject all" on the cookie banner before shooting,
+otherwise it covers the bottom half of the frame.
+
 ## Overflow test
 
 ```bash

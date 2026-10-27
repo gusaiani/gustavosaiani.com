@@ -74,6 +74,20 @@ const projects = [
     ],
   },
   {
+    name: "Plau",
+    url: "https://plau.design",
+    domain: "plau.design",
+    description:
+      "In-house font marketplace for a Brazilian type foundry, replacing FontDue: catalog, checkout, licensing, and delivery. Stripe abroad, Mercado Pago cards with installments and Pix in Brazil. A portal where designers and foundries set their own prices, coupons, and launch tiers, upload fonts, and track sales and royalties. Portuguese, English, and Spanish. Per-PR preview environments behind a staging gate.",
+    image: "/images/plau.png",
+    tech: [
+      "Python", "Django", "PostgreSQL", "Vue", "Nuxt", "JavaScript",
+      "Stripe", "Mercado Pago", "Pix", "Resend", "WeasyPrint", "fonttools",
+      "i18n", "Sentry", "Cloudflare", "Nginx", "Gunicorn", "systemd", "GitHub Actions",
+      "Claude Code",
+    ],
+  },
+  {
     name: "NovaCRM Support Agent",
     url: "https://ai-tech-support.gustavosaiani.com",
     domain: "ai-tech-support.gustavosaiani.com",
