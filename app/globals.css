@@ -111,7 +111,6 @@ img {
   padding: 0.55rem 0.85rem 0.475rem;
   font-size: 0.9375rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
   text-transform: uppercase;
   line-height: 1;
 }
@@ -126,7 +125,6 @@ img {
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--bar-muted);
-  letter-spacing: 0.14em;
   transition: color 0.2s;
 }
 
@@ -182,7 +180,6 @@ img {
 .hero-label {
   font-size: 0.6875rem;
   font-weight: 500;
-  letter-spacing: 0.3em;
   color: var(--ink);
   margin-bottom: 1.5rem;
   opacity: 0;
@@ -285,7 +282,6 @@ img {
 .section-label {
   font-size: 0.6875rem;
   font-weight: 600;
-  letter-spacing: 0.24em;
   color: var(--ink);
   margin-bottom: 0.875rem;
 }
@@ -308,7 +304,6 @@ img {
 .section-title {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 900;
-  letter-spacing: -0.03em;
   line-height: 1.1;
   color: var(--ink);
 }
@@ -376,7 +371,6 @@ img {
 .exp-period {
   font-size: 0.6875rem;
   font-weight: 500;
-  letter-spacing: 0.16em;
   color: var(--muted);
   display: block;
   margin-bottom: 0.625rem;
@@ -395,14 +389,12 @@ img {
 .card-name {
   font-size: 1.25rem;
   font-weight: 900;
-  letter-spacing: -0.02em;
   margin-bottom: 0.25rem;
   color: var(--ink);
 }
 
 .card-url {
   font-size: 0.6875rem;
-  letter-spacing: 0.08em;
   color: var(--muted);
   /* Carbona's MONO axis pushed to 100, so the mono belongs to the system. */
   font-family: var(--font-carbona), ui-monospace, "SF Mono", Menlo, monospace;
@@ -426,7 +418,6 @@ img {
 .card-tech span {
   font-size: 0.6875rem;
   font-weight: 500;
-  letter-spacing: 0.04em;
   padding: 0.25rem 0.5rem;
   background: var(--gray);
   color: var(--ink);
@@ -436,7 +427,6 @@ img {
   font-family: inherit;
   font-size: 0.6875rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
   text-transform: uppercase;
   padding: 0.25rem 0.625rem;
   background: var(--ink);
@@ -475,7 +465,6 @@ img {
 .skill-group-title {
   font-size: 0.6875rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
   color: var(--ink);
   margin-bottom: 1.125rem;
   padding-bottom: 0.625rem;
@@ -533,7 +522,6 @@ img {
 .footer-contact h2 {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 900;
-  letter-spacing: -0.03em;
   line-height: 1.1;
   color: var(--bar-ink);
   margin-bottom: 1.75rem;
@@ -547,7 +535,6 @@ img {
 .footer-link {
   font-size: 0.6875rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
   color: var(--bar-muted);
   padding: 0.625rem 1rem;
   border: 1px solid var(--bar-line);
@@ -562,7 +549,6 @@ img {
 
 .footer-copy {
   font-size: 0.6875rem;
-  letter-spacing: 0.08em;
   color: var(--bar-muted);
 }
 
