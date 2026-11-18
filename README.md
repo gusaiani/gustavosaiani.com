@@ -75,28 +75,25 @@ light-only by design.
 
 ### Typefaces
 
-Two [Plau](https://plau.design) retail variable fonts, self-hosted via
-`next/font/local` from `app/fonts/` and declared in `app/layout.tsx`. 352 KB
-for the pair; no external font requests.
+Three [Plau](https://plau.design) retail variable fonts, self-hosted via
+`next/font/local` from `app/fonts/` and declared in `app/layout.tsx`. No
+external font requests. The blog at blog.gustavosaiani.com uses the same three.
 
 | Font | File | Axes | Role |
 | --- | --- | --- | --- |
-| **Kimura Sans** (Carlos Mignot) | `KimuraSansVF.woff2` | `opsz 12-72`, `wght 100-900`, `slnt -10-0` | Everything, body through display |
+| **Vinila** | `VinilaVF.woff2` | `wdth 75-125`, `wght 100-900`, `slnt -10-0` | `--font-text`: body, labels, nav, buttons |
+| **Motiva Sans** | `MotivaSansVF.woff2` | `wght 100-900` | `--font-display`: `h1` to `h6` |
 | **Carbona** (Carlos Mignot) | `CarbonaVF.woff2` | `MONO 0-100`, `wght 200-900`, `slnt -10-0` | Card URLs, pinned to `MONO 100` |
 
-Kimura Sans replaces the Google-hosted Zen Kaku Gothic New the design was
-first drafted in: it is the closest thing in the catalogue to a Japanese
-gothic, which is the right register for a Tanaka homage. Its **optical size
-axis is the reason it carries the whole page alone**: `font-optical-sizing`
-is left at `auto`, so the browser maps `opsz` to the rendered size and the
-display line picks up the tight display cut while body text keeps the open
-one. No manual `font-variation-settings` is needed anywhere except Carbona's
-`MONO`.
+Vinila's `wdth` axis defaults to 75, which is condensed. Its `localFont` call
+passes `declarations: [{ prop: "font-stretch", value: "75% 125%" }]` so that
+`font-stretch: normal` renders the 100 width instead of the condensed default.
 
-Weights in use: 400 body, 500 labels and kickers, 700 the `GS` wordmark,
-900 display (hero name, section titles, card names, footer heading).
+Weights in use: 400 body, 500 labels and kickers, 700 the wordmark and every
+heading (section titles, card names, footer heading). No text is tracked:
+there are no `letter-spacing` declarations.
 
-Both are licensed under Plau's "Company Size" retail EULA, whose clause 2.4
+The fonts are licensed under Plau's "Company Size" retail EULA, whose clause 2.4
 covers *"toda a família das fontes selecionadas, incluídos todos os pesos,
 para utilização em desktop, webfonts e aplicativos"*, so webfont use is
 explicitly included.

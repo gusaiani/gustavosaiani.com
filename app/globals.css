@@ -52,14 +52,22 @@ html {
 }
 
 body {
-  /* Kimura Sans (Plau). opsz 12-72 is left on font-optical-sizing: auto, so
-     display sizes pick up the tighter display cut without being asked. */
-  font-family: var(--font-kimura), "Helvetica Neue", Arial, sans-serif;
+  /* Vinila (Plau) for text. Headings switch to Motiva Sans below. */
+  font-family: var(--font-text), "Helvetica Neue", Arial, sans-serif;
   background-color: var(--paper);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
@@ -303,7 +311,7 @@ img {
 
 .section-title {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.1;
   color: var(--ink);
 }
@@ -388,7 +396,7 @@ img {
 
 .card-name {
   font-size: 1.25rem;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 0.25rem;
   color: var(--ink);
 }
@@ -521,7 +529,7 @@ img {
 
 .footer-contact h2 {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.1;
   color: var(--bar-ink);
   margin-bottom: 1.75rem;
