@@ -116,7 +116,7 @@ img {
 .nav-logo {
   background: var(--hot);
   color: var(--paper);
-  padding: 0.55rem 0.85rem 0.475rem;
+  padding: 0.55rem 0.85rem 0.425rem;
   font-size: 0.9375rem;
   font-weight: 700;
   text-transform: uppercase;
